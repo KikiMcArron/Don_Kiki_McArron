@@ -1,0 +1,152 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: vertical;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background-color: #242529;
+}
+
+ul {
+  list-style: none;
+}
+
+h1 {
+  font-family: 'Unkempt', cursive;
+  font-size: 6rem;
+  color: #242529;
+  text-align: center;
+}
+
+.header {
+  background-color: #8ca1ad;
+}
+
+.header_logo {
+  display: block;
+  height: 6rem;
+  margin: 0 auto;
+  top: 1vh;
+}
+
+.header_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 2%;
+  font-size: 3rem;
+}
+
+.header_nav a {
+  color: #242529;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.center {
+  text-align: center;
+}
+
+.blog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #8ca1ad;
+  width: 60vw;
+  height: 600px;
+  margin: 5px 0;
+}
+
+.blog_last-entrie {
+  background-color: yellowgreen;
+  width: 90%;
+  height: 132px;
+  margin: 5px;
+}
+
+.blog_prev-entries {
+  background-color: yellowgreen;
+  width: 90%;
+  height: 150px;
+  margin: 5px;
+}
+
+.blog_older-entries {
+  background-color: yellowgreen;
+  width: 90%;
+  height: 300px;
+  margin: 5px;
+}
+
+.notes {
+  background-color: #8ca1ad;
+  width: 20vw;
+  height: 600px;
+  margin: 5px 5px 5px 0;
+}
+
+.projects {
+  background-color: #8ca1ad;
+  width: 20vw;
+  height: 600px;
+  margin: 5px 0 5px 5px;
+}
+
+.footer {
+  background-color: #8ca1ad;
+  height: 50px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,155 @@
+// variables
+
+$fontsize-xsm: 1.2rem;
+$fontsize-s: 2rem;
+$fontsize-m: 3rem;
+$fontsize-l: 5rem;
+$fontsize-xl: 6rem;
+$color-back: rgb(36, 37, 41);
+$color-front-main: rgb(140, 161, 173);
+$color-front-second: rgb(43, 41, 41);
+
+// reset
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+a {
+	text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+	font-family: inherit;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+}
+
+textarea {
+	resize: vertical;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// base styles
+
+body {
+	background-color: $color-back;
+}
+
+ul {
+	list-style: none;
+}
+
+h1 {
+	font-family: 'Unkempt', cursive;
+	font-size: $fontsize-xl;
+	color: $color-back;
+	text-align: center;
+}
+
+// header
+
+.header {
+	background-color: $color-front-main;
+
+	&_logo {
+		display: block;
+		height: $fontsize-xl;
+		margin: 0 auto;
+		top: 1vh;
+	}
+
+	&_nav {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 2%;
+		font-size: $fontsize-m;
+		a {
+			color: $color-back;
+		}
+	}
+}
+
+// main
+
+.content {
+	display: flex;
+}
+
+.center {
+	text-align: center;
+}
+
+.blog {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: $color-front-main;
+	width: 60vw;
+	height: 600px;
+	margin: 5px 0;
+	&_last-entrie {
+		background-color: yellowgreen;
+		width: 90%;
+		height: 132px;
+		margin: 5px;
+	}
+
+	&_prev-entries {
+		background-color: yellowgreen;
+		width: 90%;
+		height: 150px;
+		margin: 5px;
+	}
+	&_older-entries {
+		background-color: yellowgreen;
+		width: 90%;
+		height: 300px;
+		margin: 5px;
+	}
+}
+
+.notes {
+	background-color: $color-front-main;
+	width: 20vw;
+	height: 600px;
+	margin: 5px 5px 5px 0;
+}
+
+.projects {
+	background-color: $color-front-main;
+	width: 20vw;
+	height: 600px;
+	margin: 5px 0 5px 5px;
+}
+
+//footer
+
+.footer {
+	background-color: $color-front-main;
+	height: 50px;
+}
