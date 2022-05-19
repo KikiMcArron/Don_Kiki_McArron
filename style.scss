@@ -1,13 +1,15 @@
 // variables
 
+$fontsize-xxsm: 0.8rem;
 $fontsize-xsm: 1.2rem;
 $fontsize-s: 2rem;
 $fontsize-m: 3rem;
 $fontsize-l: 5rem;
 $fontsize-xl: 6rem;
 $color-back: rgb(36, 37, 41);
-$color-front-main: rgb(140, 161, 173);
+$color-front-main: rgb(121, 41, 187);
 $color-front-second: rgb(43, 41, 41);
+$color-header-text: rgb(198, 215, 218);
 
 // reset
 
@@ -57,7 +59,11 @@ table {
 // base styles
 
 body {
-	background-color: $color-back;
+	display: flex;
+	flex-direction: column;
+	background-image: url('../img/bg_pic.jpg');
+	// background-image: url('../img/pattern_grey.jpg');
+	background-size: cover;
 }
 
 ul {
@@ -66,30 +72,49 @@ ul {
 
 h1 {
 	font-family: 'Unkempt', cursive;
-	font-size: $fontsize-xl;
-	color: $color-back;
+	font-size: $fontsize-m;
+	color: $color-header-text;
 	text-align: center;
+}
+
+h3 {
+	color: $color-front-second;
+}
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
 }
 
 // header
 
 .header {
-	background-color: $color-front-main;
-
-	&_logo {
-		display: block;
-		height: $fontsize-xl;
-		margin: 0 auto;
-		top: 1vh;
+	position: fixed;
+	width: 100%;
+	display: block;
+	&_home {
+		display: flex;
+		justify-content: space-evenly;
+		&_logo {
+			display: block;
+			height: $fontsize-m;
+		}
 	}
-
+	&_setup {
+		// width: 90%;
+		height: 135px;
+		background-image: url('../img/setup_1280.jpg');
+		background-size: cover;
+		background-position: 0 20%;
+		margin: 0 auto;
+	}
 	&_nav {
 		display: flex;
 		justify-content: space-evenly;
-		padding: 2%;
-		font-size: $fontsize-m;
+		// background-color: $color-front-main;
+		font-size: $fontsize-s;
 		a {
-			color: $color-back;
+			color: $color-header-text;
 		}
 	}
 }
@@ -97,7 +122,8 @@ h1 {
 // main
 
 .content {
-	display: flex;
+	display: relative;
+	margin-top: 190px;
 }
 
 .center {
@@ -108,48 +134,53 @@ h1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background-color: $color-front-main;
-	width: 60vw;
-	height: 600px;
+	width: 100vw;
+	height: 70vh;
 	margin: 5px 0;
 	&_last-entrie {
-		background-color: yellowgreen;
+		// background-image: url('../img/bg_pic.jpg');
+		// background-size: cover;
+		background-image: url('../img/pattern_grey.jpg');
 		width: 90%;
-		height: 132px;
+		height: 30%;
 		margin: 5px;
 	}
 
 	&_prev-entries {
-		background-color: yellowgreen;
+		background-image: url('../img/pattern_grey.jpg');
 		width: 90%;
-		height: 150px;
+		height: 20%;
 		margin: 5px;
 	}
 	&_older-entries {
-		background-color: yellowgreen;
+		background-image: url('../img/pattern_grey.jpg');
 		width: 90%;
-		height: 300px;
+		height: 45%;
 		margin: 5px;
 	}
 }
 
-.notes {
-	background-color: $color-front-main;
-	width: 20vw;
-	height: 600px;
-	margin: 5px 5px 5px 0;
-}
-
-.projects {
-	background-color: $color-front-main;
-	width: 20vw;
-	height: 600px;
-	margin: 5px 0 5px 5px;
-}
 
 //footer
 
 .footer {
-	background-color: $color-front-main;
-	height: 50px;
+	width: 100%;
+	a {
+		display: block;
+		font-size: $fontsize-xxsm;
+		color: $color-header-text;
+		text-align: center;
+	}
+}
+
+//RWD
+
+@media (min-width: 768px) {
+	aside {
+		display: block;
+	}
+
+	.blog {
+		max-width: 1200px;
+	}
 }
