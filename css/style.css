@@ -197,4 +197,13 @@ h3 {
     height: 300px;
   }
 }
+
+@media (max-height: 500px) {
+  .header_setup {
+    height: 150px;
+  }
+  .content {
+    margin-top: 210px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
