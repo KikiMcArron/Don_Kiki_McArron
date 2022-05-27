@@ -23,10 +23,6 @@ $color-bgc: rgb(32, 33, 34);
 	padding: 0;
 }
 
-html,
-body {
-	height: 100%;
-}
 
 html {
 	font-size: 62.5%;
@@ -65,7 +61,7 @@ body {
 	flex-direction: column;
 	background-color: $color-bgc;
 	// background-image: $bgc-img;
-	background-attachment: fixed;
+	// background-attachment: fixed;
 }
 
 ul {
@@ -119,7 +115,7 @@ h3 {
 
 // navigation
 
-nav {
+.nav {
 	position: sticky;
 	top: 37px;
 	width: 90%;

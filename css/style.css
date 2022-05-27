@@ -7,11 +7,6 @@
   padding: 0;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -51,7 +46,6 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #202122;
-  background-attachment: fixed;
 }
 
 ul {
@@ -115,7 +109,7 @@ h3 {
   background-position: 50% 70%;
 }
 
-nav {
+.nav {
   position: -webkit-sticky;
   position: sticky;
   top: 37px;
@@ -126,7 +120,7 @@ nav {
   background-color: #202122;
 }
 
-nav ul {
+.nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -135,7 +129,7 @@ nav ul {
           justify-content: space-evenly;
 }
 
-nav ul a {
+.nav ul a {
   color: #c6d7da;
 }
 
