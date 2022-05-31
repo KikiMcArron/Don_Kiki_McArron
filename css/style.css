@@ -51,17 +51,6 @@ ul {
   list-style: none;
 }
 
-h1 {
-  font-family: 'Unkempt', cursive;
-  font-size: 1.75rem;
-  color: #c6d7da;
-  text-align: center;
-}
-
-h1 span {
-  color: red;
-}
-
 h3 {
   font-size: 0.75rem;
 }
@@ -93,14 +82,25 @@ h3 {
   top: 0;
   width: 90%;
   max-width: 1200px;
+  font-size: 1.75rem;
   background-color: #202122;
 }
 
 .header_home_logo {
   display: block;
-  font-size: 1.75rem;
   height: 1em;
   margin: .1em .8em 0 0;
+}
+
+.header_home_title {
+  font-family: 'Unkempt', cursive;
+  font-size: 1em;
+  color: #c6d7da;
+  text-align: center;
+}
+
+.header_home_title span {
+  color: red;
 }
 
 .header_setup {

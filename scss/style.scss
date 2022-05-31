@@ -61,17 +61,6 @@ ul {
 	list-style: none;
 }
 
-h1 {
-	font-family: 'Unkempt', cursive;
-	font-size: $fontsize-l;
-	color: $color-header-text;
-	text-align: center;
-
-	span {
-		color: $color-detail
-	}
-}
-
 h3 {
 	font-size: $fontsize-xs;
 }
@@ -91,13 +80,24 @@ h3 {
 		top: 0;
 		width: 90%;
 		max-width: 1200px;
+		font-size: $fontsize-l;
 		background-color: $color-bgc;
 
 		&_logo {
 			display: block;
-			font-size: $fontsize-l;
 			height: 1em;
 			margin: .1em .8em 0 0;
+		}
+
+		&_title {
+			font-family: 'Unkempt', cursive;
+			font-size: 1em;
+			color: $color-header-text;
+			text-align: center;
+
+			span {
+				color: $color-detail
+			}
 		}
 	}
 
