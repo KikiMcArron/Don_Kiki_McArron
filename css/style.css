@@ -8,7 +8,6 @@
 }
 
 html {
-  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
@@ -54,7 +53,7 @@ ul {
 
 h1 {
   font-family: 'Unkempt', cursive;
-  font-size: 2.6rem;
+  font-size: 1.75rem;
   color: #c6d7da;
   text-align: center;
 }
@@ -64,7 +63,7 @@ h1 span {
 }
 
 h3 {
-  color: #2b2929;
+  font-size: 0.75rem;
 }
 
 .header {
@@ -91,7 +90,7 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  top: 0px;
+  top: 0;
   width: 90%;
   max-width: 1200px;
   background-color: #202122;
@@ -99,15 +98,15 @@ h3 {
 
 .header_home_logo {
   display: block;
-  height: 2.6rem;
-  margin: 3px 20px 0 0;
+  font-size: 1.75rem;
+  height: 1em;
+  margin: .1em .8em 0 0;
 }
 
 .header_setup {
-  height: 200px;
+  height: 12em;
   width: 90%;
   max-width: 1200px;
-  margin-top: 40px;
   background-image: url("../img/setup_1280_400.jpg");
   background-size: cover;
   background-position: 50% 70%;
@@ -116,11 +115,12 @@ h3 {
 .nav {
   position: -webkit-sticky;
   position: sticky;
-  top: 32px;
+  top: 2rem;
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  font-size: 2rem;
+  padding: .1em 0;
+  font-size: 1rem;
   background-color: #202122;
 }
 
@@ -192,48 +192,15 @@ h3 {
   width: 100%;
 }
 
-.footer a {
-  display: block;
-  font-size: 0.8rem;
-  color: #c6d7da;
-  text-align: center;
+@media (min-width: 576px) {
+  html {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 768px) {
-  h1 {
-    font-size: 5rem;
-  }
-  .header_home_logo {
-    height: 5rem;
-    margin-right: 60px;
-  }
-  .nav {
-    top: 50px;
-    padding: 5px 0;
-  }
-  aside {
-    display: block;
-  }
-}
-
-@media (min-width: 992px) {
-  .header_setup {
-    height: 300px;
-  }
-}
-
-@media (max-height: 500px) {
-  h1 {
-    font-size: 3rem;
-  }
-  .header_home_logo {
-    height: 3rem;
-  }
-  .header_setup {
-    height: 150px;
-  }
-  .nav {
-    top: 33px;
+  html {
+    font-size: 28px;
   }
 }
 /*# sourceMappingURL=style.css.map */

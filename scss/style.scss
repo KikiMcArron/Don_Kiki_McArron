@@ -1,12 +1,13 @@
 // variables
 
-$fontsize-xs: 2rem;
-$fontsize-s: 2.6rem;
-$fontsize-m: 3rem;
-$fontsize-l: 5rem;
-$fontsize-xl: 6rem;
+$fontsize-xs: 0.75rem;
+$fontsize-s: 1rem;
+$fontsize-m: 1.5rem;
+$fontsize-l: 1.75rem;
+$fontsize-xl: 2rem;
 $color-header-text: rgb(198, 215, 218);
 $color-bgc: rgb(32, 33, 34);
+$color-detail: rgb(255, 0, 0);
 
 // reset
 
@@ -20,7 +21,6 @@ $color-bgc: rgb(32, 33, 34);
 
 
 html {
-	font-size: 62.5%;
 	scroll-behavior: smooth;
 }
 
@@ -63,17 +63,17 @@ ul {
 
 h1 {
 	font-family: 'Unkempt', cursive;
-	font-size: $fontsize-s;
+	font-size: $fontsize-l;
 	color: $color-header-text;
 	text-align: center;
 
 	span {
-		color: rgb(255, 0, 0);
+		color: $color-detail
 	}
 }
 
 h3 {
-	color: $color-front-second;
+	font-size: $fontsize-xs;
 }
 
 // header
@@ -88,23 +88,23 @@ h3 {
 		position: fixed;
 		display: flex;
 		justify-content: center;
-		top: 0px;
+		top: 0;
 		width: 90%;
 		max-width: 1200px;
 		background-color: $color-bgc;
 
 		&_logo {
 			display: block;
-			height: $fontsize-s;
-			margin: 3px 20px 0 0;
+			font-size: $fontsize-l;
+			height: 1em;
+			margin: .1em .8em 0 0;
 		}
 	}
 
 	&_setup {
-		height: 200px;
+		height: 12em;
 		width: 90%;
 		max-width: 1200px;
-		margin-top: 40px;
 		background-image: url('../img/setup_1280_400.jpg');
 		background-size: cover;
 		background-position: 50% 70%;
@@ -115,11 +115,12 @@ h3 {
 
 .nav {
 	position: sticky;
-	top: 32px;
+	top: $fontsize-xl;
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
-	font-size: $fontsize-xs;
+	padding: .1em 0;
+	font-size: $fontsize-s;
 	background-color: $color-bgc;
 
 	ul {
@@ -182,45 +183,21 @@ h3 {
 
 //RWD
 
+// Small devices
+@media (min-width: 576px) {
+	html {
+		font-size: 24px;
+ }
+}
+// Medium devices
 @media (min-width: 768px) {
-	h1 {
-		font-size: $fontsize-l;
+	html {
+		font-size: 28px;
 	}
 
-	.header_home_logo {
-		height: $fontsize-l;
-		margin-right: 60px;
-	}
+ }
 
-	.nav {
-		top: 50px;
-		padding: 5px 0;
-	}
-
-	aside {
-		display: block;
-	}
-}
-
+// Large devices
 @media (min-width: 992px) {
-	.header_setup {
-		height: 300px;
-	}
-}
 
-@media (max-height: 500px) {
-	h1 {
-		font-size: $fontsize-m;
-	}
-
-	.header_home_logo {
-		height: $fontsize-m;
-	}
-
-	.header_setup {
-		height: 150px;
-	}
-	.nav {
-		top: 33px;
-	}
 }
