@@ -15,77 +15,129 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="./index.html" class="header_home">
-
-            <img src="./img/Kapelusz.png" alt="Kapelusz a'la Al Capone" class="header_home_logo">
-            <p class="header_home_title">Don <span>Kiki</span> McArron</p>
-
-        </a>
-        <!-- <div class="wrapper"> -->
-        <!-- </div> -->
-        <div class="header_setup">
-
-        </div>
-    </header>
-    <nav class="nav">
-        <ul>
-            <li>
-                <a href="#">O mnie</a>
-            </li>
-            <li>
-                <a href="#">Blog</a>
-            </li>
-
-            <li>
-                <a href="#">Projekty</a>
-            </li>
-
-        </ul>
-    </nav>
-    <main class="content">
-        <section class="about">
-
-        </section>
-
-        <section class="blog">
-            <div class="blog_last-entrie">
-                <a href="#">
-                    <h3 class="center">Najnowszy wpis</h3>
-                    <div>
-
-                    </div>
-                </a>
+    <div class="wrapper">
+        <header class="header">
+            <a href="./index.html" class="header__home">
+                <img class="header__logo" src="./img/Kapelusz.png" alt="Kapelusz a'la Al Capone">
+                <h1 class="header__title">Don <span class="detail-color">Kiki</span> McArron</h1>
+            </a>
+            <div class="header__setup">
             </div>
-
-            <div class="blog_prev-entries">
-                <a href="#">
-                    <h3 class="center">Poprzednie wpisy</h3>
-                    <div>
-
+        </header>
+        <nav class="nav">
+            <ul class="nav__menu">
+                <li>
+                    <a href="#about" class="nav__link">O mnie</a>
+                </li>
+                <li>
+                    <a href="#blog" class="nav__link">Blog</a>
+                </li>
+                <li>
+                    <a href="#projects" class="nav__link">Projekty</a>
+                </li>
+            </ul>
+        </nav>
+        <main class="content">
+            <section class="about scroll" id="about">
+                <h2 class="content__title text-center">O MNIE</h2>
+                <div class="content__container">
+                    <img class="about__picture" src="./img/portrait.png" alt="Picture of author.">
+                    <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis magnam beatae
+                        ad. Repudiandae officia
+                        dolorem quibusdam. Exercitationem unde recusandae id nam tempora voluptate est itaque voluptatem
+                        quod
+                        minima consectetur ducimus, error repellendus adipisci provident nisi excepturi maxime eius,
+                        nesciunt
+                        quaerat sint quam. Ad modi totam molestias deleniti debitis nihil officia aperiam amet repudiandae
+                        commodi laudantium illum dolores voluptatibus nobis, recusandae laboriosam corrupti sit delectus
+                        cupiditate ea eum accusamus, cum ipsa? </p>
+                    <div class="about__container">
+                        <p class="about__text">Jeśli chcesz poznać moją historię koniecznie przeczytaj: <a href="#" class="about__link"><span class="about__hash-color"> #1</span> Kryzys wieku
+                                średniego</a>
+                        </p>
                     </div>
-                </a>
-            </div>
-
-            <div class="blog_older-entries">
-                <a href="#">
-                    <h3 class="center">Historyczne wpisy</h3>
-                    <div>
-
+                </div>
+            </section>
+            <section class="blog scroll" id="blog">
+                <h2 class="content__title text-center">BLOG</h2>
+                <div class="last-entry content__container">
+                    <a class="last-entry__link" href="#">
+                        <div class="post-info-container">
+                            <p class="last-entry__hash">#50</p>
+                            <p class="last-entry__date"><time datetime="2022-05-31">31-05-2022</time></>
+                            </p>
+                        </div>
+                        <h3 class="last-entry__title ">To jest tytuł najnowszego wpisu na blogu. </h3>
+                        <img class="last-entry__picture" src="./img/Blog/blog_38.jpg" alt="">
+                        <p class="last-entry__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit
+                            earum deserunt, ipsum tempore
+                            at expedita labore libero sapiente asperiores nesciunt porro eligendi, quos, neque magnam
+                            perspiciatis itaque cumque enim ipsa? Corporis perspiciatis quibusdam nihil facilis
+                            voluptates expedita saepe molestiae aliquid libero repudiandae? Facere eos provident
+                            pariatur dolores molestiae. Delectus, quos?</p>
+                    </a>
+                </div>
+                <div class="prev-entries content__container">
+                    <a href="#">
+                        <div class="prev-entries__1">
+                            <div class="post-info-container">
+                                <p class="prev-entries__hash">#49</p>
+                                <p class="prev-entries__date"><time datetime="2022-05-31">31-05-2022</time></>
+                                </p>
+                            </div>
+                            <h3 class="prev-entries__title">To jest tytuł wcześniejszego wpisu -1 - </h3>
+                            <img class="prev-entries__picture" src="./img/Blog/blog_37.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="prev-entries__2">
+                            <div class="post-info-container">
+                                <p class="prev-entries__hash">#48</p>
+                                <p class="prev-entries__date"><time datetime="2022-05-31">31-05-2022</time></>
+                                </p>
+                            </div>
+                            <h3 class="prev-entries__title">To jest tytuł wcześniejszego wpisu -2 - </h3>
+                            <img class="prev-entries__picture" src="./img/Blog/blog_36.jpg" alt="">
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="prev-entries__3">
+                            <div class="post-info-container">
+                                <p class="prev-entries__hash">#47</p>
+                                <p class="prev-entries__date"><time datetime="2022-05-31">31-05-2022</time></>
+                                </p>
+                            </div>
+                            <h3 class="prev-entries__title">To jest tytuł wcześniejszego wpisu -3 - </h3>
+                            <img class="prev-entries__picture" src="./img/Blog/blog_35.jpg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="older-entries content__container">
+                    <h3 class="text-center">Historyczne wpisy</h3>
+                    <a href="#">
+                        <div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="projects scroll" id="projects">
+                <h2 class="content__title">PROJEKTY</h2>
+                <div class="projects__container content__container">
+                    <div class="projects__bajtman">
+                        <h3 class="projects__title">Bajtman</h3>
+                        <img class="projects__picture"src="./img/bajtman.png" alt="">
                     </div>
-                </a>
-            </div>
-        </section>
 
-        <aside>
-            <div class="projects_bajtman"></div>
-            <div class="projects_calc"></div>
-            <div class="projects_todo"></div>
-        </aside>
-    </main>
-    <footer class="footer">
-
-    </footer>
+                    <div class="projects_calculator">
+                        <h3 class="projects__title">Kalkulator</h3>
+                        <img class="projects__picture"src="./img/calculator.png" alt="">
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+        </footer>
+    </div>
 </body>
 
 </html>
