@@ -51,11 +51,11 @@ table {
 }
 
 .detail-color {
-  color: red;
+  color: #a30a0a;
 }
 
 .scroll {
-  scroll-margin-top: 3.5rem;
+  scroll-margin-top: 3.7rem;
 }
 
 .header {
@@ -133,13 +133,12 @@ table {
 
 .nav__link {
   color: #c6d7da;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .nav__link:hover {
-  color: red;
-  font-size: 1.1rem;
+  color: #a30a0a;
 }
 
 .content {
@@ -160,7 +159,7 @@ table {
 
 .content__container {
   margin: 0.5em 1em;
-  padding: .5em;
+  padding: 0.5em;
   background-color: grey;
   border-radius: 1em;
 }
@@ -195,7 +194,7 @@ table {
 }
 
 .content .about__hash-color {
-  color: red;
+  color: #a30a0a;
 }
 
 .content .blog {
@@ -224,9 +223,10 @@ table {
 
 .content .blog .last-entry__hash {
   margin: 0.5em 1em;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
   text-align: left;
-  color: red;
+  color: #a30a0a;
 }
 
 .content .blog .last-entry__date {
@@ -237,9 +237,8 @@ table {
 }
 
 .content .blog .last-entry__title {
-  margin-left: 1.5em;
-  margin-bottom: 0.5em;
-  font-size: 1rem;
+  margin: 0 auto;
+  font-size: 1.5rem;
   color: black;
 }
 
@@ -260,7 +259,7 @@ table {
   margin-left: 0.7em;
   font-size: 1rem;
   text-align: left;
-  color: red;
+  color: #a30a0a;
 }
 
 .content .prev-entries__date {
@@ -272,12 +271,12 @@ table {
 }
 
 .content .prev-entries__title {
+  text-align: center;
   padding: 0 0 0.3em 0.7em;
   color: black;
 }
 
 .content .prev-entries__picture {
-  display: block;
   margin: 0 auto;
   width: 18em;
   padding: 0 0.5em;

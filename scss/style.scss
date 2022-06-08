@@ -10,7 +10,7 @@ $fontsize-xl: 2rem;
 $color-header-text: rgb(198, 215, 218);
 $color-content-text: rgb(0, 0, 0);
 $color-bgc: rgb(32, 33, 34);
-$color-detail: rgb(255, 0, 0);
+$color-detail: rgb(163, 10, 10);
 $color-purple: rgb(37, 3, 90);
 $color-content-bgc: grey;
 
@@ -67,7 +67,7 @@ table {
 }
 
 .scroll {
-	scroll-margin-top: 3.5rem;
+	scroll-margin-top: 3.7rem;
 }
 
 // header
@@ -132,12 +132,12 @@ table {
 
 	&__link {
 		color: $color-header-text;
-		transition: .5s;
+		transition: 0.5s;
 	}
 
 	&__link:hover {
 		color: $color-detail;
-		font-size: $fontsize-ms;
+		// font-size: $fontsize-ms;
 	}
 }
 
@@ -153,7 +153,7 @@ table {
 
 	&__container {
 		margin: 0.5em 1em;
-		padding: .5em;
+		padding: 0.5em;
 		background-color: $color-content-bgc;
 		border-radius: 1em;
 	}
@@ -165,7 +165,6 @@ table {
 	}
 
 	.about {
-
 		&__picture {
 			float: left;
 			height: 10.5em;
@@ -205,7 +204,8 @@ table {
 		.last-entry {
 			&__hash {
 				margin: 0.5em 1em;
-				font-size: $fontsize-s;
+				font-size: $fontsize-ms;
+				font-weight: bold;
 				text-align: left;
 				color: $color-detail;
 			}
@@ -218,9 +218,9 @@ table {
 			}
 
 			&__title {
-				margin-left: 1.5em;
-				margin-bottom: 0.5em;
-				font-size: $fontsize-s;
+				margin: 0 auto;
+				// margin-bottom: 0.5em;
+				font-size: $fontsize-m;
 				color: $color-content-text;
 			}
 
@@ -243,6 +243,7 @@ table {
 	.prev-entries {
 
 		&__hash {
+			// position: absolute;
 			margin-left: 0.7em;
 			font-size: $fontsize-s;
 			text-align: left;
@@ -250,6 +251,7 @@ table {
 		}
 
 		&__date {
+			// position: absolute;
 			margin-right: 1.5em;
 			margin-top: 0.5em;
 			padding: 0.3em;
@@ -258,12 +260,12 @@ table {
 		}
 
 		&__title {
+			text-align: center;
 			padding: 0 0 0.3em 0.7em;
 			color: $color-content-text;
 		}
 
 		&__picture {
-			display: block;
 			margin: 0 auto;
 			width: 18em;
 			padding: 0 0.5em;
