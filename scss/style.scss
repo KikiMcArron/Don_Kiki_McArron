@@ -201,31 +201,31 @@ table {
 
 		.last-entry {
 			&__hash {
-				margin: 0.5em 1em;
-				font-size: $fontsize-ms;
+				// margin-top: .1em;
+				font-size: $fontsize-m;
 				font-weight: bold;
-				text-align: left;
 				color: $color-detail;
 			}
 
 			&__date {
-				margin-top: 1em;
-				margin-right: 2em;
+				// margin-top: 1em;
 				font-size: $fontsize-xs;
 				color: $color-content-text;
 			}
 
 			&__title {
-				margin: 0 auto;
+				text-align: center;
 				// margin-bottom: 0.5em;
 				font-size: $fontsize-m;
 				color: $color-content-text;
 			}
 
 			&__picture {
-				float: left;
+				display: block;
+				// float: left;
 				height: 12em;
-				padding: 0.5em 0.5em 0 0.5em;
+				padding: 0.5em 0;
+				margin: 0 auto;
 			}
 
 			&__text {
@@ -239,7 +239,6 @@ table {
 	}
 
 	.prev-entries {
-
 		&__hash {
 			// position: absolute;
 			margin-left: 0.7em;
@@ -299,6 +298,11 @@ table {
 @media (min-width: 576px) {
 	html {
 		font-size: 24px;
+	}
+
+	.last-entry__picture {
+		height: 200px;
+		margin: 0.5em 0.5em 0 0.5em;
 	}
 }
 // Medium devices
