@@ -116,10 +116,9 @@ table {
 
 .nav {
 	position: sticky;
-	top: $fontsize-xl;
+	top: 2em;
 	width: 100%;
 	max-width: 1200px;
-	margin: 0 auto;
 	padding: 0.2em 0;
 	font-size: $fontsize-s;
 	background-color: $color-bgc;
@@ -127,7 +126,6 @@ table {
 	&__menu {
 		display: flex;
 		justify-content: space-evenly;
-		list-style: none;
 	}
 
 	&__link {
