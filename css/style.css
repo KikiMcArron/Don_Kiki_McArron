@@ -147,12 +147,16 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   background-image: url("../img/pattern_grey.jpg");
   width: 100%;
   max-width: 1200px;
+}
+
+.content__title {
+  margin-top: .3em;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
 }
 
 .content__container {
@@ -160,12 +164,6 @@ table {
   padding: 0.5em;
   background-color: grey;
   border-radius: 1em;
-}
-
-.content__title {
-  text-align: center;
-  font-size: 1.5rem;
-  color: black;
 }
 
 .content .about__picture {
@@ -206,7 +204,6 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 0.75rem;
   margin: 1em 0;
 }
 

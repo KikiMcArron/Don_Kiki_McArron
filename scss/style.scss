@@ -135,7 +135,6 @@ table {
 
 	&__link:hover {
 		color: $color-detail;
-		// 	font-size: $fontsize-m;
 	}
 }
 
@@ -144,10 +143,16 @@ table {
 .content {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	background-image: url('../img/pattern_grey.jpg');
 	width: 100%;
 	max-width: 1200px;
+
+	&__title {
+		margin-top: .3em;
+		text-align: center;
+		font-size: $fontsize-m;
+		color: $color-content-text;
+	}
 
 	&__container {
 		margin: 0.5em 1em;
@@ -156,13 +161,9 @@ table {
 		border-radius: 1em;
 	}
 
-	&__title {
-		text-align: center;
-		font-size: $fontsize-m;
-		color: $color-content-text;
-	}
 
 	.about {
+
 		&__picture {
 			float: left;
 			height: 10.5em;
@@ -191,7 +192,6 @@ table {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		font-size: $fontsize-xs;
 		margin: 1em 0;
 
 		.post-info-container {
@@ -201,14 +201,12 @@ table {
 
 		.last-entry {
 			&__hash {
-				// margin-top: .1em;
 				font-size: $fontsize-m;
 				font-weight: bold;
 				color: $color-detail;
 			}
 
 			&__date {
-				// margin-top: 1em;
 				font-size: $fontsize-xs;
 				color: $color-content-text;
 			}
@@ -232,7 +230,6 @@ table {
 				text-align: justify;
 				color: $color-content-text;
 			}
-			// height: 30%;
 		}
 	}
 
@@ -302,7 +299,6 @@ table {
 		.last-entry {
 			.last-entry__picture {
 				float: left;
-				// height: 500px;
 				margin: 0.5em 0.5em 0 0.5em;
 			}
 		}
