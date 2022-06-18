@@ -77,6 +77,7 @@ table {
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+	z-index: 10;
 
 	&__home {
 		position: fixed;
@@ -122,6 +123,7 @@ table {
 	padding: 0.2em 0;
 	font-size: $fontsize-s;
 	background-color: $color-bgc;
+	z-index: 10;
 
 	&__menu {
 		display: flex;
@@ -148,7 +150,7 @@ table {
 	max-width: 1200px;
 
 	&__title {
-		margin-top: .3em;
+		margin-top: 0.3em;
 		text-align: center;
 		font-size: $fontsize-m;
 		color: $color-content-text;
@@ -161,9 +163,7 @@ table {
 		border-radius: 1em;
 	}
 
-
 	.about {
-
 		&__picture {
 			float: left;
 			height: 10.5em;
@@ -194,12 +194,12 @@ table {
 		justify-content: center;
 		margin: 1em 0;
 
-		.post-info-container {
-			display: flex;
-			justify-content: space-between;
-		}
-
 		.last-entry {
+			&__info {
+				display: flex;
+				justify-content: space-between;
+			}
+
 			&__hash {
 				font-size: $fontsize-m;
 				font-weight: bold;
@@ -234,32 +234,67 @@ table {
 	}
 
 	.prev-entries {
+		&__entry {
+			// display: flex;
+			// 	flex-direction: column;
+			font-size: $fontsize-s;
+		}
+
+		&__info {
+			display: flex;
+			justify-content: space-between;
+		}
+
 		&__hash {
-			// position: absolute;
-			margin-left: 0.7em;
 			font-size: $fontsize-s;
 			text-align: left;
 			color: $color-detail;
 		}
 
 		&__date {
-			// position: absolute;
-			margin-right: 1.5em;
-			margin-top: 0.5em;
 			padding: 0.3em;
 			font-size: $fontsize-xxs;
 			color: $color-content-text;
 		}
 
-		&__title {
-			text-align: center;
-			padding: 0 0 0.3em 0.7em;
-			color: $color-content-text;
+		&__hero-1,
+		&__hero-2,
+		&__hero-3 {
+			// display: flex;
+			width: 90%;
+			height: 40vmin;
+			margin: 0.5em auto;
+			background-size: cover;
+			background-position: center;
 		}
 
-		&__picture {
+		&__hero-1 {
+			background-image: url('../img/Blog/blog_37.jpg');
+		}
+
+		&__hero-2 {
+			background-image: url('../img/Blog/blog_36.jpg');
+		}
+
+		&__hero-3 {
+			background-image: url('../img/Blog/blog_35.jpg');
+		}
+
+		&__title {
+			position: relative;
+			top: 20vmin;
+			text-align: center;
+			padding: 0 0 0.3em 0.7em;
+			color: $color-header-text;
+			background-color: rgba(73, 73, 73, 0.438);
+
+		}
+
+		&__bg {
+			position: absolute;
 			margin: 0 auto;
-			width: 18em;
+			width: 100%;
+			height: 100%;
 			padding: 0 0.5em;
 		}
 	}
@@ -309,11 +344,36 @@ table {
 	html {
 		font-size: 28px;
 	}
-	.prev-entries {
-		display: flex;
+	.content {
+		.prev-entries {
+			display: flex;
+			justify-content: space-around;
+			&__hero-1,
+			&__hero-2,
+			&__hero-3 {
+				height: 30vmin;
+				width: 28vw;
+				max-width: 350px;
+				margin: 0;
+			}
+			&__title {
+				top: 40%;
+				font-size: $fontsize-xs;
+			}
+		}
 	}
 }
 
 // Large devices
 @media (min-width: 992px) {
+	html {
+		font-size: 34px;
+	}
+	.content {
+		.prev-entries {
+			&__title {
+				font-size: $fontsize-s;
+			}
+		}
+	}
 }
