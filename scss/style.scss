@@ -3,7 +3,7 @@
 $fontsize-xxs: 0.5rem;
 $fontsize-xs: 0.75rem;
 $fontsize-s: 1rem;
-$fontsize-ms: 1.1rem;
+$fontsize-ms: 1.25rem;
 $fontsize-m: 1.5rem;
 $fontsize-l: 1.75rem;
 $fontsize-xl: 2rem;
@@ -219,8 +219,8 @@ table {
 
 			&__picture {
 				display: block;
-				height: 12em;
-				padding: 0.5em 0;
+				height: 9em;
+				// padding: 0.5em 0;
 				margin: 0 auto;
 			}
 
@@ -231,73 +231,76 @@ table {
 				color: $color-content-text;
 			}
 		}
+
+		.prev-entries {
+			&__entry {
+				// display: flex;
+				// 	flex-direction: column;
+				font-size: $fontsize-s;
+			}
+
+			&__info {
+				display: flex;
+				justify-content: space-between;
+			}
+
+			&__hash {
+				font-size: $fontsize-s;
+				text-align: left;
+				color: $color-detail;
+			}
+
+			&__date {
+				padding: 0.3em;
+				font-size: $fontsize-xxs;
+				color: $color-content-text;
+			}
+
+			&__hero-1,
+			&__hero-2,
+			&__hero-3 {
+				// display: flex;
+				width: 90%;
+				height: 40vmin;
+				margin: 0.5em auto;
+				background-size: cover;
+				background-position: center;
+			}
+
+			&__hero-1 {
+				background-image: url('../img/Blog/blog_37.jpg');
+			}
+
+			&__hero-2 {
+				background-image: url('../img/Blog/blog_36.jpg');
+			}
+
+			&__hero-3 {
+				background-image: url('../img/Blog/blog_35.jpg');
+			}
+
+			&__title {
+				position: relative;
+				top: 50%;
+				transform: translate(0, -50%);
+				font-size: $fontsize-ms;
+				text-align: center;
+				padding: 0 0 0.3em 0.7em;
+				color: $color-header-text;
+				background-color: rgba(73, 73, 73, 0.438);
+
+			}
+
+			&__bg {
+				position: absolute;
+				margin: 0 auto;
+				width: 100%;
+				height: 100%;
+				padding: 0 0.5em;
+			}
+		}
 	}
 
-	.prev-entries {
-		&__entry {
-			// display: flex;
-			// 	flex-direction: column;
-			font-size: $fontsize-s;
-		}
-
-		&__info {
-			display: flex;
-			justify-content: space-between;
-		}
-
-		&__hash {
-			font-size: $fontsize-s;
-			text-align: left;
-			color: $color-detail;
-		}
-
-		&__date {
-			padding: 0.3em;
-			font-size: $fontsize-xxs;
-			color: $color-content-text;
-		}
-
-		&__hero-1,
-		&__hero-2,
-		&__hero-3 {
-			// display: flex;
-			width: 90%;
-			height: 40vmin;
-			margin: 0.5em auto;
-			background-size: cover;
-			background-position: center;
-		}
-
-		&__hero-1 {
-			background-image: url('../img/Blog/blog_37.jpg');
-		}
-
-		&__hero-2 {
-			background-image: url('../img/Blog/blog_36.jpg');
-		}
-
-		&__hero-3 {
-			background-image: url('../img/Blog/blog_35.jpg');
-		}
-
-		&__title {
-			position: relative;
-			top: 20vmin;
-			text-align: center;
-			padding: 0 0 0.3em 0.7em;
-			color: $color-header-text;
-			background-color: rgba(73, 73, 73, 0.438);
-
-		}
-
-		&__bg {
-			position: absolute;
-			margin: 0 auto;
-			width: 100%;
-			height: 100%;
-			padding: 0 0.5em;
-		}
-	}
 
 	.projects {
 		&__container {
@@ -330,11 +333,18 @@ table {
 		font-size: 24px;
 	}
 
-	.blog {
-		.last-entry {
-			.last-entry__picture {
-				float: left;
-				margin: 0.5em 0.5em 0 0.5em;
+	.content {
+		.blog {
+			.last-entry {
+				.last-entry__picture {
+					float: left;
+					margin: 0.5em 0.5em 0 0.5em;
+				}
+			}
+			.prev-entries {
+				&__title {
+					// top: 40%;
+				}
 			}
 		}
 	}
@@ -344,21 +354,24 @@ table {
 	html {
 		font-size: 28px;
 	}
+
 	.content {
-		.prev-entries {
-			display: flex;
-			justify-content: space-around;
-			&__hero-1,
-			&__hero-2,
-			&__hero-3 {
-				height: 30vmin;
-				width: 28vw;
-				max-width: 350px;
-				margin: 0;
-			}
-			&__title {
-				top: 40%;
-				font-size: $fontsize-xs;
+		.blog {
+			.prev-entries {
+				display: flex;
+				justify-content: space-around;
+				&__hero-1,
+				&__hero-2,
+				&__hero-3 {
+					height: 30vmin;
+					width: 28vw;
+					max-width: 350px;
+					margin: 0;
+				}
+				&__title {
+					// top: 40%;
+					font-size: $fontsize-xs;
+				}
 			}
 		}
 	}
@@ -369,10 +382,14 @@ table {
 	html {
 		font-size: 34px;
 	}
+
 	.content {
-		.prev-entries {
-			&__title {
-				font-size: $fontsize-s;
+		.blog {
+			.prev-entries {
+				&__title {
+					// top: 30%;
+					font-size: $fontsize-xs;
+				}
 			}
 		}
 	}
