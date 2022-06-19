@@ -341,11 +341,6 @@ table {
 					margin: 0.5em 0.5em 0 0.5em;
 				}
 			}
-			.prev-entries {
-				&__title {
-					// top: 40%;
-				}
-			}
 		}
 	}
 }
@@ -369,7 +364,6 @@ table {
 					margin: 0;
 				}
 				&__title {
-					// top: 40%;
 					font-size: $fontsize-xs;
 				}
 			}
@@ -387,7 +381,6 @@ table {
 		.blog {
 			.prev-entries {
 				&__title {
-					// top: 30%;
 					font-size: $fontsize-xs;
 				}
 			}
