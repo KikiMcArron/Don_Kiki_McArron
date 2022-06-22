@@ -117,7 +117,7 @@ table {
   width: 100%;
   max-width: 1200px;
   padding: 0.2em 0;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   background-color: #202122;
   z-index: 10;
 }
@@ -158,6 +158,7 @@ table {
   margin-top: 0.3em;
   text-align: center;
   font-size: 1.75rem;
+  text-transform: uppercase;
   color: black;
 }
 
@@ -296,7 +297,7 @@ table {
   top: 50%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   text-align: center;
   padding: 0.5em;
   color: #c6d7da;
@@ -313,7 +314,7 @@ table {
 
 .content .blog .old-entries__title {
   position: relative;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   text-align: center;
   margin-bottom: 1em;
 }
@@ -381,6 +382,54 @@ table {
 
 .content .projects__picture {
   width: 7em;
+}
+
+.content .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+}
+
+.content .contact .link {
+  padding: 0.5em;
+  color: black;
+}
+
+.content .contact .fa-at {
+  padding: 0.3em 0;
+}
+
+.content .contact .mail-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: black;
+}
+
+.content .contact .mail {
+  padding: 0.3em 0 0.3em 0.3em;
+  font-size: 0.75rem;
+}
+
+.content .contact .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .footer .foot {

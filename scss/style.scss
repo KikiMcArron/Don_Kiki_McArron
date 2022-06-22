@@ -3,7 +3,7 @@
 $fontsize-xxs: 0.5rem;
 $fontsize-xs: 0.75rem;
 $fontsize-s: 1rem;
-$fontsize-ms: 1.25rem;
+$fontsize-ms: 1.2rem;
 $fontsize-m: 1.5rem;
 $fontsize-l: 1.75rem;
 $fontsize-xl: 2rem;
@@ -153,6 +153,7 @@ table {
 		margin-top: 0.3em;
 		text-align: center;
 		font-size: $fontsize-l;
+		text-transform: uppercase;
 		color: $color-content-text;
 	}
 
@@ -298,6 +299,7 @@ table {
 				padding: 0 0.5em;
 			}
 		}
+
 		.old-entries {
 			&__title {
 				position: relative;
@@ -364,12 +366,40 @@ table {
 			width: 7em;
 		}
 	}
+	.contact {
+		display: flex;
+		flex-direction: column;
+		align-items: space-around;
+
+		.link {
+			padding: 0.5em;
+			color: $color-content-text;
+		}
+		.fa-at {
+			padding: 0.3em 0;
+		}
+		.mail-link {
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			color: $color-content-text;
+		}
+		.mail {
+			padding: 0.3em 0 0.3em 0.3em;
+			font-size: $fontsize-xs;
+		}
+		.social {
+			display: flex;
+			justify-content: space-evenly;
+		}
+	}
 }
 
 //footer
 
 .footer {
 	// width: 100%;
+
 	// height: 5em;
 	.foot {
 		// color: $color-header-text
