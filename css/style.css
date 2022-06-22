@@ -157,7 +157,7 @@ table {
 .content__title {
   margin-top: 0.3em;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   color: black;
 }
 
@@ -191,10 +191,6 @@ table {
   color: black;
 }
 
-.content .about__hash-color {
-  color: #a30a0a;
-}
-
 .content .blog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -206,10 +202,10 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 1em 0;
 }
 
 .content .blog .last-entry__info {
+  padding: 0 0.3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,11 +221,13 @@ table {
 }
 
 .content .blog .last-entry__date {
+  padding-top: 1.2em;
   font-size: 0.75rem;
   color: black;
 }
 
 .content .blog .last-entry__title {
+  margin-bottom: 0.3em;
   text-align: center;
   font-size: 1.5rem;
   color: black;
@@ -237,7 +235,7 @@ table {
 
 .content .blog .last-entry__picture {
   display: block;
-  height: 9em;
+  height: 11em;
   margin: 0 auto;
 }
 
@@ -250,6 +248,7 @@ table {
 
 .content .blog .prev-entries__entry {
   font-size: 1rem;
+  padding: 0 0.3em;
 }
 
 .content .blog .prev-entries__info {
@@ -259,38 +258,37 @@ table {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 auto;
 }
 
 .content .blog .prev-entries__hash {
   font-size: 1rem;
-  text-align: left;
   color: #a30a0a;
 }
 
 .content .blog .prev-entries__date {
-  padding: 0.3em;
+  padding-top: 1.3em;
   font-size: 0.5rem;
   color: black;
 }
 
 .content .blog .prev-entries__hero-1, .content .blog .prev-entries__hero-2, .content .blog .prev-entries__hero-3 {
-  width: 90%;
   height: 40vmin;
-  margin: 0.5em auto;
+  margin: 0 auto 1em auto;
   background-size: cover;
   background-position: center;
 }
 
 .content .blog .prev-entries__hero-1 {
-  background-image: url("../img/Blog/blog_37.jpg");
+  background-image: url("../img/Blog/blog-38.jpg");
 }
 
 .content .blog .prev-entries__hero-2 {
-  background-image: url("../img/Blog/blog_36.jpg");
+  background-image: url("../img/Blog/blog-37.jpg");
 }
 
 .content .blog .prev-entries__hero-3 {
-  background-image: url("../img/Blog/blog_35.jpg");
+  background-image: url("../img/Blog/blog-36.jpg");
 }
 
 .content .blog .prev-entries__title {
@@ -300,7 +298,7 @@ table {
           transform: translate(0, -50%);
   font-size: 1.25rem;
   text-align: center;
-  padding: 0 0 0.3em 0.7em;
+  padding: 0.5em;
   color: #c6d7da;
   background-color: rgba(73, 73, 73, 0.438);
 }
@@ -313,6 +311,61 @@ table {
   padding: 0 0.5em;
 }
 
+.content .blog .old-entries__title {
+  position: relative;
+  font-size: 1.25rem;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.content .blog .old-entries__entry {
+  font-size: 1rem;
+  margin-bottom: 1em;
+}
+
+.content .blog .old-entries__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .blog .old-entries__hash {
+  margin-left: 0.3em;
+  font-size: 1rem;
+  color: #a30a0a;
+}
+
+.content .blog .old-entries__date {
+  padding: 0.5em;
+  font-size: 0.5rem;
+  color: black;
+}
+
+.content .blog .old-entries__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .blog .old-entries__miniature {
+  padding: 0 1em;
+  height: 2em;
+}
+
+.content .blog .old-entries__entry-title {
+  padding: 0 0 0em 0em;
+  color: black;
+}
+
 .content .projects__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -322,7 +375,7 @@ table {
 }
 
 .content .projects__title {
-  padding: 0 0 0.3em 0.7em;
+  padding: 0 0 0.3em 0;
   text-align: center;
 }
 
@@ -330,13 +383,14 @@ table {
   width: 7em;
 }
 
+.footer .foot {
+  font-weight: bold;
+  padding: 0.5em;
+}
+
 @media (min-width: 576px) {
   html {
     font-size: 24px;
-  }
-  .content .blog .last-entry .last-entry__picture {
-    float: left;
-    margin: 0.5em 0.5em 0 0.5em;
   }
 }
 
@@ -344,12 +398,19 @@ table {
   html {
     font-size: 28px;
   }
+  .content .blog .last-entry .last-entry__picture {
+    float: left;
+    margin: 0.5em 0.5em 0 0.5em;
+  }
   .content .blog .prev-entries {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .content .blog .prev-entries__info {
+    width: 100%;
   }
   .content .blog .prev-entries__hero-1, .content .blog .prev-entries__hero-2, .content .blog .prev-entries__hero-3 {
     height: 30vmin;

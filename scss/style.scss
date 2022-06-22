@@ -152,7 +152,7 @@ table {
 	&__title {
 		margin-top: 0.3em;
 		text-align: center;
-		font-size: $fontsize-m;
+		font-size: $fontsize-l;
 		color: $color-content-text;
 	}
 
@@ -182,20 +182,17 @@ table {
 			font-weight: bold;
 			color: $color-content-text;
 		}
-
-		&__hash-color {
-			color: $color-detail;
-		}
 	}
 
 	.blog {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin: 1em 0;
+		// margin: 1em 0;
 
 		.last-entry {
 			&__info {
+				padding: 0 0.3em;
 				display: flex;
 				justify-content: space-between;
 			}
@@ -207,11 +204,13 @@ table {
 			}
 
 			&__date {
+				padding-top: 1.2em;
 				font-size: $fontsize-xs;
 				color: $color-content-text;
 			}
 
 			&__title {
+				margin-bottom: 0.3em;
 				text-align: center;
 				font-size: $fontsize-m;
 				color: $color-content-text;
@@ -219,7 +218,7 @@ table {
 
 			&__picture {
 				display: block;
-				height: 9em;
+				height: 11em;
 				// padding: 0.5em 0;
 				margin: 0 auto;
 			}
@@ -234,24 +233,25 @@ table {
 
 		.prev-entries {
 			&__entry {
-				// display: flex;
-				// 	flex-direction: column;
 				font-size: $fontsize-s;
+				padding: 0 0.3em;
 			}
 
 			&__info {
 				display: flex;
 				justify-content: space-between;
+				// width: 90%;
+				margin: 0 auto;
 			}
 
 			&__hash {
 				font-size: $fontsize-s;
-				text-align: left;
+				// text-align: left;
 				color: $color-detail;
 			}
 
 			&__date {
-				padding: 0.3em;
+				padding-top: 1.3em;
 				font-size: $fontsize-xxs;
 				color: $color-content-text;
 			}
@@ -260,23 +260,23 @@ table {
 			&__hero-2,
 			&__hero-3 {
 				// display: flex;
-				width: 90%;
+				// width: 100%;
 				height: 40vmin;
-				margin: 0.5em auto;
+				margin: 0 auto 1em auto;
 				background-size: cover;
 				background-position: center;
 			}
 
 			&__hero-1 {
-				background-image: url('../img/Blog/blog_37.jpg');
+				background-image: url('../img/Blog/blog-38.jpg');
 			}
 
 			&__hero-2 {
-				background-image: url('../img/Blog/blog_36.jpg');
+				background-image: url('../img/Blog/blog-37.jpg');
 			}
 
 			&__hero-3 {
-				background-image: url('../img/Blog/blog_35.jpg');
+				background-image: url('../img/Blog/blog-36.jpg');
 			}
 
 			&__title {
@@ -285,10 +285,9 @@ table {
 				transform: translate(0, -50%);
 				font-size: $fontsize-ms;
 				text-align: center;
-				padding: 0 0 0.3em 0.7em;
+				padding: 0.5em;
 				color: $color-header-text;
 				background-color: rgba(73, 73, 73, 0.438);
-
 			}
 
 			&__bg {
@@ -299,8 +298,56 @@ table {
 				padding: 0 0.5em;
 			}
 		}
-	}
+		.old-entries {
+			&__title {
+				position: relative;
+				font-size: $fontsize-ms;
+				text-align: center;
+				// padding: 0 0 0.6em 0em;
+				margin-bottom: 1em;
+			}
 
+			&__entry {
+				// display: flex;
+				font-size: $fontsize-s;
+				margin-bottom: 1em;
+			}
+
+			&__info {
+				display: flex;
+				justify-content: end;
+				align-items: center;
+			}
+
+			&__hash {
+				margin-left: 0.3em;
+				font-size: $fontsize-s;
+				color: $color-detail;
+			}
+
+			&__date {
+				padding: 0.5em;
+				font-size: $fontsize-xxs;
+				color: $color-content-text;
+			}
+
+			&__container {
+				display: flex;
+				align-items: center;
+				// margin: 0 1.5em;
+			}
+			&__miniature {
+				// position: relative;
+				padding: 0 1em;
+				height: 2em;
+			}
+
+			&__entry-title {
+				padding: 0 0 0em 0em;
+				color: $color-content-text;
+			}
+		}
+	}
 
 	.projects {
 		&__container {
@@ -309,7 +356,7 @@ table {
 		}
 
 		&__title {
-			padding: 0 0 0.3em 0.7em;
+			padding: 0 0 0.3em 0;
 			text-align: center;
 		}
 
@@ -321,9 +368,15 @@ table {
 
 //footer
 
-// .footer {
-// 	// width: 100%;
-// }
+.footer {
+	// width: 100%;
+	// height: 5em;
+	.foot {
+		// color: $color-header-text
+		font-weight: bold;
+		padding: 0.5em;
+	}
+}
 
 //RWD
 
@@ -331,6 +384,13 @@ table {
 @media (min-width: 576px) {
 	html {
 		font-size: 24px;
+	}
+}
+
+// Medium devices
+@media (min-width: 768px) {
+	html {
+		font-size: 28px;
 	}
 
 	.content {
@@ -341,20 +401,12 @@ table {
 					margin: 0.5em 0.5em 0 0.5em;
 				}
 			}
-		}
-	}
-}
-// Medium devices
-@media (min-width: 768px) {
-	html {
-		font-size: 28px;
-	}
-
-	.content {
-		.blog {
 			.prev-entries {
 				display: flex;
 				justify-content: space-around;
+				&__info {
+					width: 100%;
+				}
 				&__hero-1,
 				&__hero-2,
 				&__hero-3 {
