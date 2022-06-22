@@ -86,7 +86,7 @@ table {
 		top: 0;
 		width: 100%;
 		max-width: 1200px;
-		font-size: $fontsize-l;
+		font-size: $fontsize-xl;
 		background-color: $color-bgc;
 	}
 
@@ -117,11 +117,11 @@ table {
 
 .nav {
 	position: sticky;
-	top: 2em;
+	top: 1.9em;
 	width: 100%;
 	max-width: 1200px;
 	padding: 0.2em 0;
-	font-size: $fontsize-s;
+	font-size: $fontsize-ms;
 	background-color: $color-bgc;
 	z-index: 10;
 
