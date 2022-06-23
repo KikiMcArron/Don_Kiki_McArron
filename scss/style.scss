@@ -56,6 +56,10 @@ table {
 
 // base styles
 
+// a:hover {
+// 	color: $color-detail;
+// }
+
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -177,7 +181,6 @@ table {
 			padding: 0.3em 0;
 			font-weight: bold;
 			text-align: center;
-
 		}
 
 		&__text {
@@ -185,13 +188,21 @@ table {
 			padding-bottom: 0.5em;
 			text-align: justify;
 		}
+
 		&__container {
 			display: flex;
 			margin: 1em 0.5em;
 		}
+
 		&__link {
 			font-weight: bold;
 			color: $color-content-text;
+			transition: 0.5s;
+		}
+
+		&__link:hover {
+			// font-weight: bold;
+			color: $color-detail;
 		}
 	}
 
@@ -226,11 +237,19 @@ table {
 				font-size: $fontsize-m;
 				color: $color-content-text;
 			}
+			&__date,
+			&__title {
+				transition: 0.5s;
+			}
+			&__date:hover,
+			&__title:hover {
+				color: $color-detail;
+			}
 
 			&__picture {
 				display: block;
 				height: 11em;
-				// padding: 0.5em 0;
+				padding-bottom: 0.5em;
 				margin: 0 auto;
 			}
 
@@ -301,6 +320,15 @@ table {
 				background-color: rgba(73, 73, 73, 0.438);
 			}
 
+			&__date,
+			&__title {
+				transition: 0.5s;
+			}
+			&__date:hover,
+			&__title:hover {
+				color: $color-detail;
+			}
+
 			&__bg {
 				position: absolute;
 				margin: 0 auto;
@@ -358,6 +386,16 @@ table {
 				padding: 0 0 0em 0em;
 				color: $color-content-text;
 			}
+
+			&__date,
+			&__entry-title {
+				transition: 0.5s;
+			}
+
+			&__date:hover,
+			&__entry-title:hover {
+				color: $color-detail;
+			}
 		}
 	}
 
@@ -370,12 +408,18 @@ table {
 		&__title {
 			padding: 0 0 0.3em 0;
 			text-align: center;
+			transition: .5s;
+		}
+
+		&__title:hover {
+			color: $color-detail;
 		}
 
 		&__picture {
 			width: 7em;
 		}
 	}
+
 	.contact {
 		display: flex;
 		align-items: space-around;
@@ -395,6 +439,7 @@ table {
 		&__link {
 			padding: 0.5em;
 			color: $color-content-text;
+			transition: 0.5s;
 		}
 
 		&__mail-link {
@@ -402,6 +447,7 @@ table {
 			justify-content: center;
 			align-content: center;
 			color: $color-content-text;
+			transition: 0.5s;
 
 			.fa-at {
 				padding: 0.3em 0;
@@ -411,6 +457,10 @@ table {
 				padding: 0.3em 0 0.3em 0.3em;
 				font-size: $fontsize-xs;
 			}
+		}
+		&__link:hover,
+		&__mail-link:hover {
+			color: $color-detail;
 		}
 	}
 }

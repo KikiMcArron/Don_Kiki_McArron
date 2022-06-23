@@ -199,6 +199,12 @@ table {
 .content .about__link {
   font-weight: bold;
   color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.content .about__link:hover {
+  color: #a30a0a;
 }
 
 .content .blog {
@@ -243,9 +249,19 @@ table {
   color: black;
 }
 
+.content .blog .last-entry__date, .content .blog .last-entry__title {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.content .blog .last-entry__date:hover, .content .blog .last-entry__title:hover {
+  color: #a30a0a;
+}
+
 .content .blog .last-entry__picture {
   display: block;
   height: 11em;
+  padding-bottom: 0.5em;
   margin: 0 auto;
 }
 
@@ -313,6 +329,15 @@ table {
   background-color: rgba(73, 73, 73, 0.438);
 }
 
+.content .blog .prev-entries__date, .content .blog .prev-entries__title {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.content .blog .prev-entries__date:hover, .content .blog .prev-entries__title:hover {
+  color: #a30a0a;
+}
+
 .content .blog .prev-entries__bg {
   position: absolute;
   margin: 0 auto;
@@ -376,6 +401,15 @@ table {
   color: black;
 }
 
+.content .blog .old-entries__date, .content .blog .old-entries__entry-title {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.content .blog .old-entries__date:hover, .content .blog .old-entries__entry-title:hover {
+  color: #a30a0a;
+}
+
 .content .projects__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -387,6 +421,12 @@ table {
 .content .projects__title {
   padding: 0 0 0.3em 0;
   text-align: center;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.content .projects__title:hover {
+  color: #a30a0a;
 }
 
 .content .projects__picture {
@@ -432,6 +472,8 @@ table {
 .content .contact__link {
   padding: 0.5em;
   color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .content .contact__mail-link {
@@ -444,6 +486,8 @@ table {
   -ms-flex-line-pack: center;
       align-content: center;
   color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .content .contact__mail-link .fa-at {
@@ -453,6 +497,10 @@ table {
 .content .contact__mail-link .mail {
   padding: 0.3em 0 0.3em 0.3em;
   font-size: 0.75rem;
+}
+
+.content .contact__link:hover, .content .contact__mail-link:hover {
+  color: #a30a0a;
 }
 
 .footer .foot {
