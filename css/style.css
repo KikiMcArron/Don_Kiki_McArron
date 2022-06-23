@@ -98,8 +98,8 @@ table {
 .header__title {
   font-family: 'Unkempt', cursive;
   font-size: 1em;
-  color: #c6d7da;
   text-align: center;
+  color: #c6d7da;
 }
 
 .header__setup {
@@ -156,7 +156,7 @@ table {
 }
 
 .content__title {
-  margin-top: 0.3em;
+  margin-top: 0.6em;
   text-align: center;
   font-size: 1.75rem;
   text-transform: uppercase;
@@ -164,7 +164,7 @@ table {
 }
 
 .content__container {
-  margin: 0.5em 1em;
+  margin: 0.2em 1em 0 1em;
   padding: 0.5em;
   background-color: grey;
   border-radius: 1em;
@@ -244,8 +244,8 @@ table {
 
 .content .blog .last-entry__title {
   margin-bottom: 0.3em;
-  text-align: center;
   font-size: 1.5rem;
+  text-align: center;
   color: black;
 }
 
@@ -261,20 +261,24 @@ table {
 .content .blog .last-entry__picture {
   display: block;
   height: 11em;
-  padding-bottom: 0.5em;
+  padding-bottom: .5em;
   margin: 0 auto;
 }
 
 .content .blog .last-entry__text {
-  margin: 0 0.5em 0.7em;
+  margin: .5em .7em;
   font-size: 1rem;
   text-align: justify;
   color: black;
 }
 
+.content .blog .prev-entries {
+  margin-top: .7em;
+}
+
 .content .blog .prev-entries__entry {
+  padding: 0 .3em;
   font-size: 1rem;
-  padding: 0 0.3em;
 }
 
 .content .blog .prev-entries__info {
@@ -320,42 +324,38 @@ table {
 .content .blog .prev-entries__title {
   position: relative;
   top: 50%;
+  padding: .5em;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
   font-size: 1.2rem;
   text-align: center;
-  padding: 0.5em;
   color: #c6d7da;
   background-color: rgba(73, 73, 73, 0.438);
 }
 
 .content .blog .prev-entries__date, .content .blog .prev-entries__title {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .content .blog .prev-entries__date:hover, .content .blog .prev-entries__title:hover {
   color: #a30a0a;
 }
 
-.content .blog .prev-entries__bg {
-  position: absolute;
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  padding: 0 0.5em;
+.content .blog .old-entries {
+  margin-top: 0.7em;
 }
 
 .content .blog .old-entries__title {
   position: relative;
+  margin-bottom: 1em;
   font-size: 1.2rem;
   text-align: center;
-  margin-bottom: 1em;
 }
 
 .content .blog .old-entries__entry {
-  font-size: 1rem;
   margin-bottom: 1em;
+  font-size: 1rem;
 }
 
 .content .blog .old-entries__info {
@@ -421,8 +421,8 @@ table {
 .content .projects__title {
   padding: 0 0 0.3em 0;
   text-align: center;
-  -webkit-transition: .5s;
-  transition: .5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .content .projects__title:hover {
@@ -444,6 +444,7 @@ table {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: .7em;
 }
 
 .content .contact__container {
@@ -460,20 +461,21 @@ table {
 }
 
 .content .contact__social {
-  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  width: 80%;
+  padding-bottom: .5em;
 }
 
 .content .contact__link {
   padding: 0.5em;
   color: black;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .content .contact__mail-link {
@@ -485,17 +487,14 @@ table {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  padding-bottom: .5em;
   color: black;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.content .contact__mail-link .fa-at {
-  padding: 0.3em 0;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .content .contact__mail-link .mail {
-  padding: 0.3em 0 0.3em 0.3em;
+  padding-left: .4em;
   font-size: 0.75rem;
 }
 
@@ -504,19 +503,19 @@ table {
 }
 
 .footer .foot {
-  padding: 0.5em;
+  padding: .5em;
   color: #c6d7da;
   font-size: 0.75rem;
   font-weight: bold;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 36em) {
   html {
     font-size: 24px;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48em) {
   html {
     font-size: 28px;
   }
@@ -535,17 +534,17 @@ table {
     width: 100%;
   }
   .content .blog .prev-entries__hero-1, .content .blog .prev-entries__hero-2, .content .blog .prev-entries__hero-3 {
+    margin: 0;
     height: 30vmin;
     width: 28vw;
     max-width: 350px;
-    margin: 0;
   }
   .content .blog .prev-entries__title {
     font-size: 0.75rem;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 62em) {
   html {
     font-size: 34px;
   }

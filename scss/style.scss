@@ -10,6 +10,7 @@ $fontsize-xl: 2rem;
 $color-header-text: rgb(198, 215, 218);
 $color-content-text: rgb(0, 0, 0);
 $color-bgc: rgb(32, 33, 34);
+$color-bgc-transparent: rgba(73, 73, 73, 0.438);
 $color-detail: rgb(163, 10, 10);
 $color-purple: rgb(37, 3, 90);
 $color-content-bgc: grey;
@@ -56,10 +57,6 @@ table {
 
 // base styles
 
-// a:hover {
-// 	color: $color-detail;
-// }
-
 .wrapper {
 	display: flex;
 	flex-direction: column;
@@ -104,8 +101,8 @@ table {
 	&__title {
 		font-family: 'Unkempt', cursive;
 		font-size: 1em;
-		color: $color-header-text;
 		text-align: center;
+		color: $color-header-text;
 	}
 
 	&__setup {
@@ -155,7 +152,7 @@ table {
 	max-width: 1200px;
 
 	&__title {
-		margin-top: 0.3em;
+		margin-top: 0.6em;
 		text-align: center;
 		font-size: $fontsize-l;
 		text-transform: uppercase;
@@ -163,7 +160,7 @@ table {
 	}
 
 	&__container {
-		margin: 0.5em 1em;
+		margin: 0.2em 1em 0 1em;
 		padding: 0.5em;
 		background-color: $color-content-bgc;
 		border-radius: 1em;
@@ -201,7 +198,6 @@ table {
 		}
 
 		&__link:hover {
-			// font-weight: bold;
 			color: $color-detail;
 		}
 	}
@@ -210,7 +206,6 @@ table {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		// margin: 1em 0;
 
 		.last-entry {
 			&__info {
@@ -233,14 +228,16 @@ table {
 
 			&__title {
 				margin-bottom: 0.3em;
-				text-align: center;
 				font-size: $fontsize-m;
+				text-align: center;
 				color: $color-content-text;
 			}
+
 			&__date,
 			&__title {
 				transition: 0.5s;
 			}
+
 			&__date:hover,
 			&__title:hover {
 				color: $color-detail;
@@ -249,12 +246,12 @@ table {
 			&__picture {
 				display: block;
 				height: 11em;
-				padding-bottom: 0.5em;
+				padding-bottom: .5em;
 				margin: 0 auto;
 			}
 
 			&__text {
-				margin: 0 0.5em 0.7em;
+				margin: .5em .7em;
 				font-size: $fontsize-s;
 				text-align: justify;
 				color: $color-content-text;
@@ -262,21 +259,21 @@ table {
 		}
 
 		.prev-entries {
+			margin-top: .7em;
+
 			&__entry {
+				padding: 0 .3em;
 				font-size: $fontsize-s;
-				padding: 0 0.3em;
 			}
 
 			&__info {
 				display: flex;
 				justify-content: space-between;
-				// width: 90%;
 				margin: 0 auto;
 			}
 
 			&__hash {
 				font-size: $fontsize-s;
-				// text-align: left;
 				color: $color-detail;
 			}
 
@@ -289,8 +286,6 @@ table {
 			&__hero-1,
 			&__hero-2,
 			&__hero-3 {
-				// display: flex;
-				// width: 100%;
 				height: 40vmin;
 				margin: 0 auto 1em auto;
 				background-size: cover;
@@ -312,45 +307,38 @@ table {
 			&__title {
 				position: relative;
 				top: 50%;
+				padding: .5em;
 				transform: translate(0, -50%);
 				font-size: $fontsize-ms;
 				text-align: center;
-				padding: 0.5em;
 				color: $color-header-text;
-				background-color: rgba(73, 73, 73, 0.438);
+				background-color: $color-bgc-transparent;
 			}
 
 			&__date,
 			&__title {
-				transition: 0.5s;
+				transition: .5s;
 			}
+
 			&__date:hover,
 			&__title:hover {
 				color: $color-detail;
 			}
-
-			&__bg {
-				position: absolute;
-				margin: 0 auto;
-				width: 100%;
-				height: 100%;
-				padding: 0 0.5em;
-			}
 		}
 
 		.old-entries {
+			margin-top: 0.7em;
+
 			&__title {
 				position: relative;
+				margin-bottom: 1em;
 				font-size: $fontsize-ms;
 				text-align: center;
-				// padding: 0 0 0.6em 0em;
-				margin-bottom: 1em;
 			}
 
 			&__entry {
-				// display: flex;
-				font-size: $fontsize-s;
 				margin-bottom: 1em;
+				font-size: $fontsize-s;
 			}
 
 			&__info {
@@ -408,7 +396,7 @@ table {
 		&__title {
 			padding: 0 0 0.3em 0;
 			text-align: center;
-			transition: .5s;
+			transition: 0.5s;
 		}
 
 		&__title:hover {
@@ -424,6 +412,7 @@ table {
 		display: flex;
 		align-items: space-around;
 		flex-direction: column;
+		margin-bottom: .7em;
 
 		&__container {
 			display: flex;
@@ -431,33 +420,32 @@ table {
 			align-items: center;
 		}
 		&__social {
-			width: 80%;
 			display: flex;
 			justify-content: space-evenly;
+			width: 80%;
+			padding-bottom: .5em;
 		}
 
 		&__link {
 			padding: 0.5em;
 			color: $color-content-text;
-			transition: 0.5s;
+			transition: .5s;
 		}
 
 		&__mail-link {
 			display: flex;
 			justify-content: center;
 			align-content: center;
+			padding-bottom: .5em;
 			color: $color-content-text;
-			transition: 0.5s;
-
-			.fa-at {
-				padding: 0.3em 0;
-			}
+			transition: .5s;
 
 			.mail {
-				padding: 0.3em 0 0.3em 0.3em;
+				padding-left: .4em;
 				font-size: $fontsize-xs;
 			}
 		}
+		
 		&__link:hover,
 		&__mail-link:hover {
 			color: $color-detail;
@@ -469,7 +457,7 @@ table {
 
 .footer {
 	.foot {
-		padding: 0.5em;
+		padding: .5em;
 		color: $color-header-text;
 		font-size: $fontsize-xs;
 		font-weight: bold;
@@ -478,15 +466,14 @@ table {
 
 //RWD
 
-// Small devices
-@media (min-width: 576px) {
+
+@media (min-width: 36em) {
 	html {
 		font-size: 24px;
 	}
 }
 
-// Medium devices
-@media (min-width: 768px) {
+@media (min-width: 48em) {
 	html {
 		font-size: 28px;
 	}
@@ -508,10 +495,10 @@ table {
 				&__hero-1,
 				&__hero-2,
 				&__hero-3 {
+					margin: 0;
 					height: 30vmin;
 					width: 28vw;
 					max-width: 350px;
-					margin: 0;
 				}
 				&__title {
 					font-size: $fontsize-xs;
@@ -521,8 +508,7 @@ table {
 	}
 }
 
-// Large devices
-@media (min-width: 992px) {
+@media (min-width: 62em) {
 	html {
 		font-size: 34px;
 	}
