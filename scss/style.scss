@@ -246,12 +246,12 @@ table {
 			&__picture {
 				display: block;
 				height: 11em;
-				padding-bottom: .5em;
+				padding-bottom: 0.5em;
 				margin: 0 auto;
 			}
 
 			&__text {
-				margin: .5em .7em;
+				margin: 0.5em 0.7em;
 				font-size: $fontsize-s;
 				text-align: justify;
 				color: $color-content-text;
@@ -259,10 +259,10 @@ table {
 		}
 
 		.prev-entries {
-			margin-top: .7em;
+			margin-top: 0.7em;
 
 			&__entry {
-				padding: 0 .3em;
+				padding: 0 0.3em;
 				font-size: $fontsize-s;
 			}
 
@@ -307,7 +307,7 @@ table {
 			&__title {
 				position: relative;
 				top: 50%;
-				padding: .5em;
+				padding: 0.5em;
 				transform: translate(0, -50%);
 				font-size: $fontsize-ms;
 				text-align: center;
@@ -317,7 +317,7 @@ table {
 
 			&__date,
 			&__title {
-				transition: .5s;
+				transition: 0.5s;
 			}
 
 			&__date:hover,
@@ -362,16 +362,13 @@ table {
 			&__container {
 				display: flex;
 				align-items: center;
-				// margin: 0 1.5em;
 			}
 			&__miniature {
-				// position: relative;
 				padding: 0 1em;
 				height: 2em;
 			}
 
 			&__entry-title {
-				padding: 0 0 0em 0em;
 				color: $color-content-text;
 			}
 
@@ -383,6 +380,28 @@ table {
 			&__date:hover,
 			&__entry-title:hover {
 				color: $color-detail;
+			}
+
+			&__all-entries {
+				display: flex;
+				justify-content: center;
+				margin: 2em 0 .7em 0;
+
+				.all-entries-btn {
+					padding: 0.5em 1em;
+					font-size: $fontsize-xs;
+					font-weight: bold;
+					text-transform: uppercase;
+					color: $color-content-text;
+					border: 2px solid $color-content-text;
+					border-radius: 10px;
+					transition: 0.5s;
+				}
+
+				.all-entries-btn:hover {
+					color: $color-detail;
+					border: 2px solid $color-detail;
+				}
 			}
 		}
 	}
@@ -412,7 +431,7 @@ table {
 		display: flex;
 		align-items: space-around;
 		flex-direction: column;
-		margin-bottom: .7em;
+		margin-bottom: 0.7em;
 
 		&__container {
 			display: flex;
@@ -423,29 +442,29 @@ table {
 			display: flex;
 			justify-content: space-evenly;
 			width: 80%;
-			padding-bottom: .5em;
+			padding-bottom: 0.5em;
 		}
 
 		&__link {
 			padding: 0.5em;
 			color: $color-content-text;
-			transition: .5s;
+			transition: 0.5s;
 		}
 
 		&__mail-link {
 			display: flex;
 			justify-content: center;
 			align-content: center;
-			padding-bottom: .5em;
+			padding-bottom: 0.5em;
 			color: $color-content-text;
-			transition: .5s;
+			transition: 0.5s;
 
 			.mail {
-				padding-left: .4em;
+				padding-left: 0.4em;
 				font-size: $fontsize-xs;
 			}
 		}
-		
+
 		&__link:hover,
 		&__mail-link:hover {
 			color: $color-detail;
@@ -457,7 +476,7 @@ table {
 
 .footer {
 	.foot {
-		padding: .5em;
+		padding: 0.5em;
 		color: $color-header-text;
 		font-size: $fontsize-xs;
 		font-weight: bold;
@@ -465,7 +484,6 @@ table {
 }
 
 //RWD
-
 
 @media (min-width: 36em) {
 	html {
