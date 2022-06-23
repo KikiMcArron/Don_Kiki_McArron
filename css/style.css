@@ -13,6 +13,7 @@ html {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 input,
@@ -175,8 +176,16 @@ table {
   padding: 0.3em 0.5em 0 0.5em;
 }
 
+.content .about__hello {
+  margin: 0 0.5em;
+  padding: 0.3em 0;
+  font-weight: bold;
+  text-align: center;
+}
+
 .content .about__text {
   margin: 0 0.5em;
+  padding-bottom: 0.5em;
   text-align: justify;
 }
 
@@ -388,25 +397,44 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: space-around;
-      -ms-flex-align: space-around;
-          align-items: space-around;
 }
 
-.content .contact .link {
+.content .contact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content .contact__social {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.content .contact__link {
   padding: 0.5em;
   color: black;
 }
 
-.content .contact .fa-at {
-  padding: 0.3em 0;
-}
-
-.content .contact .mail-link {
+.content .contact__mail-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,23 +446,20 @@ table {
   color: black;
 }
 
-.content .contact .mail {
+.content .contact__mail-link .fa-at {
+  padding: 0.3em 0;
+}
+
+.content .contact__mail-link .mail {
   padding: 0.3em 0 0.3em 0.3em;
   font-size: 0.75rem;
 }
 
-.content .contact .social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
 .footer .foot {
-  font-weight: bold;
   padding: 0.5em;
+  color: #c6d7da;
+  font-size: 0.75rem;
+  font-weight: bold;
 }
 
 @media (min-width: 576px) {

@@ -30,6 +30,7 @@ html {
 
 a {
 	text-decoration: none;
+	color: black;
 }
 
 input,
@@ -171,8 +172,17 @@ table {
 			padding: 0.3em 0.5em 0 0.5em;
 		}
 
+		&__hello {
+			margin: 0 0.5em;
+			padding: 0.3em 0;
+			font-weight: bold;
+			text-align: center;
+
+		}
+
 		&__text {
 			margin: 0 0.5em;
+			padding-bottom: 0.5em;
 			text-align: justify;
 		}
 		&__container {
@@ -368,29 +378,39 @@ table {
 	}
 	.contact {
 		display: flex;
-		flex-direction: column;
 		align-items: space-around;
+		flex-direction: column;
 
-		.link {
+		&__container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__social {
+			width: 80%;
+			display: flex;
+			justify-content: space-evenly;
+		}
+
+		&__link {
 			padding: 0.5em;
 			color: $color-content-text;
 		}
-		.fa-at {
-			padding: 0.3em 0;
-		}
-		.mail-link {
+
+		&__mail-link {
 			display: flex;
 			justify-content: center;
 			align-content: center;
 			color: $color-content-text;
-		}
-		.mail {
-			padding: 0.3em 0 0.3em 0.3em;
-			font-size: $fontsize-xs;
-		}
-		.social {
-			display: flex;
-			justify-content: space-evenly;
+
+			.fa-at {
+				padding: 0.3em 0;
+			}
+
+			.mail {
+				padding: 0.3em 0 0.3em 0.3em;
+				font-size: $fontsize-xs;
+			}
 		}
 	}
 }
@@ -398,13 +418,11 @@ table {
 //footer
 
 .footer {
-	// width: 100%;
-
-	// height: 5em;
 	.foot {
-		// color: $color-header-text
-		font-weight: bold;
 		padding: 0.5em;
+		color: $color-header-text;
+		font-size: $fontsize-xs;
+		font-weight: bold;
 	}
 }
 
