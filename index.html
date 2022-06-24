@@ -17,22 +17,28 @@
 </head>
 
 <body>
-    <div class="wrapper">
+    <div class="body-container">
         <header class="header">
             <a href="./index.html" class="header__home">
                 <img class="header__logo" src="./img/Kapelusz.png" alt="Kapelusz a'la Al Capone">
                 <h1 class="header__title">Don <span class="detail-color">Kiki</span> McArron</h1>
             </a>
-            <div class="header__setup">
-            </div>
         </header>
         <nav class="nav">
-            <div class="nav__menu">
-                <a href="#about" class="nav__link">O mnie</a>
-                <a href="#blog" class="nav__link">Blog</a>
-                <a href="#projects" class="nav__link">Projekty</a>
-                <a href="#contact" class="nav__link">Kontakt</a>
-            </div>
+            <ul class="nav__menu">
+                <li>
+                    <a href="#about" class="nav__link">O mnie</a>
+                </li>
+                <li>
+                    <a href="#blog" class="nav__link">Blog</a>
+                </li>
+                <li>
+                    <a href="#projects" class="nav__link">Projekty</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav__link">Kontakt</a>
+                </li>
+            </ul>
         </nav>
         <main class="content">
             <section class="about scroll" id="about">
@@ -55,13 +61,12 @@
                     </p>
                     <p class="about__text">Na mojej stronie, oprócz wszystkich wpisów bloga znajdziesz projekty, które w
                         trakcie nauki realizuję. Jednym z nich jest włąśnie ta strona, do obejrzenia innych zapraszam do
-                        sekcji: <a class="about__link" href="#projects">"Projekty"</a></p>
-                    <div class="about__container">
-                        <p class="about__text">Jeśli chcesz poznać moją historię koniecznie przeczytaj: <a href="#"
-                                class="about__link"><span class="about__hash-color"> #1</span> Kryzys wieku
-                                średniego</a>
-                        </p>
-                    </div>
+                        sekcji: <a class="about__link" href="#projects">"Projekty"</a>.</p>
+                    <p class="about__text about__text--highlight">Jeśli chcesz poznać moją historię koniecznie
+                        przeczytaj: <a href="#" class="about__link"><span class="detail-color"> #1</span> Kryzys
+                            wieku
+                            średniego</a>.
+                    </p>
                 </div>
             </section>
             <section class="blog scroll" id="blog">
@@ -70,7 +75,7 @@
                     <a class="last-entry__link" href="#">
                         <div class="last-entry__info">
                             <p class="last-entry__hash">#39</p>
-                            <p class="last-entry__date"><time datetime="2022-06-20">20-06-2022</time></>
+                            <p class="last-entry__date"><time datetime="2022-06-20">20-06-2022</time>
                             </p>
                         </div>
 
@@ -90,11 +95,11 @@
                         tygodnia już wszyscy razem byliśmy w domu...</p>
                 </div>
                 <div class="prev-entries content__container">
-                    <a href="#">
-                        <div class="prev-entries__entry">
+                    <div class="prev-entries__entry">
+                        <a href="#">
                             <div class="prev-entries__info ">
                                 <p class="prev-entries__hash">#38</p>
-                                <p class="prev-entries__date"><time datetime="2022-06-06">06-06-2022</time></>
+                                <p class="prev-entries__date"><time datetime="2022-06-06">06-06-2022</time>
                                 </p>
                             </div>
                             <div class="prev-entries__hero-1">
@@ -102,13 +107,13 @@
                                     <h3>"Wiem, że nic nie wiem"</h3>
                                 </div>
                             </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="prev-entries__entry">
+                        </a>
+                    </div>
+                    <div class="prev-entries__entry">
+                        <a href="#">
                             <div class="prev-entries__info ">
                                 <p class="prev-entries__hash">#37</p>
-                                <p class="prev-entries__date"><time datetime="2022-06-01">01-06-2022</time></>
+                                <p class="prev-entries__date"><time datetime="2022-06-01">01-06-2022</time>
                                 </p>
                             </div>
                             <div class="prev-entries__hero-2">
@@ -117,13 +122,13 @@
                                 </div>
 
                             </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="prev-entries__entry">
+                        </a>
+                    </div>
+                    <div class="prev-entries__entry">
+                        <a href="#">
                             <div class="prev-entries__info">
                                 <p class="prev-entries__hash">#36</p>
-                                <p class="prev-entries__date"><time datetime="2022-05-24">24-05-2022</time></>
+                                <p class="prev-entries__date"><time datetime="2022-05-24">24-05-2022</time>
                                 </p>
                             </div>
                             <div class="prev-entries__hero-3">
@@ -131,17 +136,17 @@
                                     <h3>Mógłby już ten pociąg przyjechać</h3>
                                 </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
                 <div class="old-entries content__container">
                     <div class="old-entries__title">
                         <h3>Wcześniejsze wpisy</h3>
                     </div>
-                    <a href="#">
-                        <div class="old-entries__entry">
+                    <div class="old-entries__entry">
+                        <a href="#">
                             <div class="old-entries__info">
-                                <p class="old-entries__date"><time datetime="2022-05-17">17-05-2022</time></>
+                                <p class="old-entries__date"><time datetime="2022-05-17">17-05-2022</time>
                                 </p>
                             </div>
                             <div class="old-entries__container">
@@ -152,12 +157,12 @@
                                 </p>
                             </div>
 
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="old-entries__entry">
+                        </a>
+                    </div>
+                    <div class="old-entries__entry">
+                        <a href="#">
                             <div class="old-entries__info">
-                                <p class="old-entries__date"><time datetime="2022-05-09">09-05-2022</time></>
+                                <p class="old-entries__date"><time datetime="2022-05-09">09-05-2022</time>
                                 </p>
                             </div>
                             <div class="old-entries__container">
@@ -167,12 +172,12 @@
                                 <p class="old-entries__entry-title">Pierwszy dzień reszty mojego życia
                                 </p>
                             </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="old-entries__entry">
+                        </a>
+                    </div>
+                    <div class="old-entries__entry">
+                        <a href="#">
                             <div class="old-entries__info">
-                                <p class="old-entries__date"><time datetime="2022-05-06">06-05-2022</time></>
+                                <p class="old-entries__date"><time datetime="2022-05-06">06-05-2022</time>
                                 </p>
                             </div>
                             <div class="old-entries__container">
@@ -183,12 +188,12 @@
                                     of an element and change it using JavaScript?
                                 </p>
                             </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="old-entries__entry">
+                        </a>
+                    </div>
+                    <div class="old-entries__entry">
+                        <a href="#">
                             <div class="old-entries__info">
-                                <p class="old-entries__date"><time datetime="2022-05-04">04-05-2022</time></>
+                                <p class="old-entries__date"><time datetime="2022-05-04">04-05-2022</time>
                                 </p>
                             </div>
                             <div class="old-entries__container">
@@ -198,12 +203,12 @@
                                 <p class="old-entries__entry-title"> 12-tygodniowy plan II - tydzień piąty
                                 </p>
                             </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="old-entries__entry">
+                        </a>
+                    </div>
+                    <div class="old-entries__entry">
+                        <a href="#">
                             <div class="old-entries__info">
-                                <p class="old-entries__date"><time datetime="2022-04-27">27-04-2022</time></>
+                                <p class="old-entries__date"><time datetime="2022-04-27">27-04-2022</time>
                                 </p>
                             </div>
                             <div class="old-entries__container">
@@ -213,12 +218,12 @@
                                 <p class="old-entries__entry-title"> 12-tygodniowy plan II - tydzień czwarty
                                 </p>
                             </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="old-entries__entry">
+                        </a>
+                    </div>
+                    <div class="old-entries__entry">
+                        <a href="#">
                             <div class="old-entries__info">
-                                <p class="old-entries__date"><time datetime="2022-04-19">19-04-2022</time></>
+                                <p class="old-entries__date"><time datetime="2022-04-19">19-04-2022</time>
                                 </p>
                             </div>
                             <div class="old-entries__container">
@@ -228,12 +233,12 @@
                                 <p class="old-entries__entry-title"> Święta, święta i po świętach
                                 </p>
                             </div>
-                        </div>
-                    </a>
-                    <a href="#">
-                        <div class="old-entries__entry">
+                        </a>
+                    </div>
+                    <div class="old-entries__entry">
+                        <a href="#">
                             <div class="old-entries__info">
-                                <p class="old-entries__date"><time datetime="2022-04-13">13-04-2022</time></>
+                                <p class="old-entries__date"><time datetime="2022-04-13">13-04-2022</time>
                                 </p>
                             </div>
                             <div class="old-entries__container">
@@ -243,9 +248,13 @@
                                 <p class="old-entries__entry-title">12-tygodniowy plan II - tydzień drugi
                                 </p>
                             </div>
-                        </div>
-                    </a>
-                    <div class="old-entries__all-entries"><a href="#"><p class="all-entries-btn">Wszystkie wpisy</p></a></div>
+                        </a>
+                    </div>
+                    <div class="old-entries__all-entries">
+                        <p class="all-entries-btn">
+                            <a href="#">Wszystkie wpisy</a>
+                        </p>
+                    </div>
                 </div>
             </section>
             <section class="projects scroll" id="projects">
@@ -257,7 +266,7 @@
                             alt="Obraz przedstawiający projekt BajtMana">
                     </div>
 
-                    <div class="projects_calculator">
+                    <div class="projects__calculator">
                         <h3 class="projects__title">Kalkulator</h3>
                         <img class="projects__picture" src="./img/calculator.png"
                             alt="Obraz przedstawiający projekt kalkulatora">

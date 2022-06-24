@@ -13,7 +13,7 @@ $color-bgc: rgb(32, 33, 34);
 $color-bgc-transparent: rgba(73, 73, 73, 0.438);
 $color-detail: rgb(163, 10, 10);
 $color-purple: rgb(37, 3, 90);
-$color-content-bgc: grey;
+$color-content-bgc: rgb(128, 128, 128);
 
 // reset
 
@@ -31,7 +31,11 @@ html {
 
 a {
 	text-decoration: none;
-	color: black;
+	color: #000;
+}
+
+ul {
+	list-style: none;
 }
 
 input,
@@ -57,7 +61,7 @@ table {
 
 // base styles
 
-.wrapper {
+.body-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -95,7 +99,7 @@ table {
 	&__logo {
 		display: block;
 		height: 1em;
-		margin: 0.1em 0.8em 0 0;
+		padding: .2em .5em 0 0;
 	}
 
 	&__title {
@@ -105,14 +109,16 @@ table {
 		color: $color-header-text;
 	}
 
-	&__setup {
-		height: 60vmin;
-		width: 100%;
-		max-width: 1200px;
-		background-image: url('../img/setup_1280_400.jpg');
-		background-size: cover;
-		background-position: 50%;
-	}
+}
+
+.header::after {
+	content: "";
+	height: 60vmin;
+	width: 100%;
+	max-width: 1200px;
+	background-image: url('../img/setup_1280_400.jpg');
+	background-size: cover;
+	background-position: 50%;
 }
 
 // navigation
@@ -122,7 +128,7 @@ table {
 	top: 1.9em;
 	width: 100%;
 	max-width: 1200px;
-	padding: 0.2em 0;
+	padding: .2em 0;
 	font-size: $fontsize-ms;
 	background-color: $color-bgc;
 	z-index: 10;
@@ -134,7 +140,7 @@ table {
 
 	&__link {
 		color: $color-header-text;
-		transition: 0.5s;
+		transition: .5s;
 	}
 
 	&__link:hover {
@@ -152,7 +158,7 @@ table {
 	max-width: 1200px;
 
 	&__title {
-		margin-top: 0.6em;
+		margin-top: .6em;
 		text-align: center;
 		font-size: $fontsize-l;
 		text-transform: uppercase;
@@ -160,8 +166,8 @@ table {
 	}
 
 	&__container {
-		margin: 0.2em 1em 0 1em;
-		padding: 0.5em;
+		margin: .2em 1em 0 1em;
+		padding: .5em;
 		background-color: $color-content-bgc;
 		border-radius: 1em;
 	}
@@ -170,31 +176,31 @@ table {
 		&__picture {
 			float: left;
 			height: 10.5em;
-			padding: 0.3em 0.5em 0 0.5em;
+			padding: .3em .5em 0 .5em;
 		}
 
 		&__hello {
-			margin: 0 0.5em;
-			padding: 0.3em 0;
+			margin: 0 .5em;
+			padding: .3em 0;
 			font-weight: bold;
 			text-align: center;
 		}
 
 		&__text {
-			margin: 0 0.5em;
-			padding-bottom: 0.5em;
+			margin: 0 .5em;
+			padding-bottom: .5em;
 			text-align: justify;
+
+			&--highlight {
+				padding: 1.5em 1em;
+			}
 		}
 
-		&__container {
-			display: flex;
-			margin: 1em 0.5em;
-		}
 
 		&__link {
 			font-weight: bold;
 			color: $color-content-text;
-			transition: 0.5s;
+			transition: .5s;
 		}
 
 		&__link:hover {
@@ -235,7 +241,7 @@ table {
 
 			&__date,
 			&__title {
-				transition: 0.5s;
+				transition: .5s;
 			}
 
 			&__date:hover,
@@ -246,12 +252,12 @@ table {
 			&__picture {
 				display: block;
 				height: 11em;
-				padding-bottom: 0.5em;
+				padding-bottom: .5em;
 				margin: 0 auto;
 			}
 
 			&__text {
-				margin: 0.5em 0.7em;
+				margin: .5em .7em;
 				font-size: $fontsize-s;
 				text-align: justify;
 				color: $color-content-text;
@@ -307,7 +313,7 @@ table {
 			&__title {
 				position: relative;
 				top: 50%;
-				padding: 0.5em;
+				padding: .5em;
 				transform: translate(0, -50%);
 				font-size: $fontsize-ms;
 				text-align: center;
