@@ -1,0 +1,22 @@
+{
+    "sourceFile": "scss/abstracts/_colors.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1656166495422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1656166552206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,5 @@\n $color-bgc: rgb(32, 33, 34);\n $color-bgc-transparent: rgba(73, 73, 73, 0.438);\n $color-detail: rgb(163, 10, 10);\n $color-purple: rgb(37, 3, 90);\n-$color-content-bgc: rgb(128, 128, 128);\n\\ No newline at end of file\n+$color-content-bgc: rgb(128, 128, 128); \n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1656166495422,
+            "name": "Commit-0",
+            "content": "$color-header-text: rgb(198, 215, 218);\n$color-content-text: rgb(0, 0, 0);\n$color-bgc: rgb(32, 33, 34);\n$color-bgc-transparent: rgba(73, 73, 73, 0.438);\n$color-detail: rgb(163, 10, 10);\n$color-purple: rgb(37, 3, 90);\n$color-content-bgc: rgb(128, 128, 128);"
+        }
+    ]
+}

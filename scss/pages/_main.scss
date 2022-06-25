@@ -1,0 +1,327 @@
+.content {
+	display: flex;
+	flex-direction: column;
+	background-image: url('../img/pattern_grey.jpg');
+	width: 100%;
+	max-width: 1200px;
+
+	&__title {
+		margin-top: .6em;
+		text-align: center;
+		font-size: $fontsize-l;
+		text-transform: uppercase;
+		color: $color-content-text;
+	}
+
+	&__container {
+		margin: .2em 1em 0 1em;
+		padding: .5em;
+		background-color: $color-content-bgc;
+		border-radius: 1em;
+	}
+
+	.about {
+		&__picture {
+			float: left;
+			height: 10.5em;
+			padding: .3em .5em 0 .5em;
+		}
+
+		&__hello {
+			margin: 0 .5em;
+			padding: .3em 0;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		&__text {
+			margin: 0 .5em;
+			padding-bottom: .5em;
+			text-align: justify;
+
+			&--highlight {
+				padding: 1.5em 1em;
+			}
+		}
+
+
+		&__link {
+			font-weight: bold;
+			color: $color-content-text;
+			transition: .5s;
+		}
+
+		&__link:hover {
+			color: $color-detail;
+		}
+	}
+
+	.blog {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		.last-entry {
+			&__info {
+				padding: 0 0.3em;
+				display: flex;
+				justify-content: space-between;
+			}
+
+			&__hash {
+				font-size: $fontsize-m;
+				font-weight: bold;
+				color: $color-detail;
+			}
+
+			&__date {
+				padding-top: 1.2em;
+				font-size: $fontsize-xs;
+				color: $color-content-text;
+			}
+
+			&__title {
+				margin-bottom: 0.3em;
+				font-size: $fontsize-m;
+				text-align: center;
+				color: $color-content-text;
+			}
+
+			&__date,
+			&__title {
+				transition: .5s;
+			}
+
+			&__date:hover,
+			&__title:hover {
+				color: $color-detail;
+			}
+
+			&__picture {
+				display: block;
+				height: 11em;
+				padding-bottom: .5em;
+				margin: 0 auto;
+			}
+
+			&__text {
+				margin: .5em .7em;
+				font-size: $fontsize-s;
+				text-align: justify;
+				color: $color-content-text;
+			}
+		}
+
+		.prev-entries {
+			margin-top: 0.7em;
+
+			&__entry {
+				padding: 0 0.3em;
+				font-size: $fontsize-s;
+			}
+
+			&__info {
+				display: flex;
+				justify-content: space-between;
+				margin: 0 auto;
+			}
+
+			&__hash {
+				font-size: $fontsize-s;
+				color: $color-detail;
+			}
+
+			&__date {
+				padding-top: 1.3em;
+				font-size: $fontsize-xxs;
+				color: $color-content-text;
+			}
+
+			&__hero-1,
+			&__hero-2,
+			&__hero-3 {
+				height: 40vmin;
+				margin: 0 auto 1em auto;
+				background-size: cover;
+				background-position: center;
+			}
+
+			&__hero-1 {
+				background-image: url('../img/Blog/blog-38.jpg');
+			}
+
+			&__hero-2 {
+				background-image: url('../img/Blog/blog-37.jpg');
+			}
+
+			&__hero-3 {
+				background-image: url('../img/Blog/blog-36.jpg');
+			}
+
+			&__title {
+				position: relative;
+				top: 50%;
+				padding: .5em;
+				transform: translate(0, -50%);
+				font-size: $fontsize-ms;
+				text-align: center;
+				color: $color-header-text;
+				background-color: $color-bgc-transparent;
+			}
+
+			&__date,
+			&__title {
+				transition: 0.5s;
+			}
+
+			&__date:hover,
+			&__title:hover {
+				color: $color-detail;
+			}
+		}
+
+		.old-entries {
+			margin-top: 0.7em;
+
+			&__title {
+				position: relative;
+				margin-bottom: 1em;
+				font-size: $fontsize-ms;
+				text-align: center;
+			}
+
+			&__entry {
+				margin-bottom: 1em;
+				font-size: $fontsize-s;
+			}
+
+			&__info {
+				display: flex;
+				justify-content: end;
+				align-items: center;
+			}
+
+			&__hash {
+				margin-left: 0.3em;
+				font-size: $fontsize-s;
+				color: $color-detail;
+			}
+
+			&__date {
+				padding: 0.5em;
+				font-size: $fontsize-xxs;
+				color: $color-content-text;
+			}
+
+			&__container {
+				display: flex;
+				align-items: center;
+			}
+			&__miniature {
+				padding: 0 1em;
+				height: 2em;
+			}
+
+			&__entry-title {
+				color: $color-content-text;
+			}
+
+			&__date,
+			&__entry-title {
+				transition: 0.5s;
+			}
+
+			&__date:hover,
+			&__entry-title:hover {
+				color: $color-detail;
+			}
+
+			&__all-entries {
+				display: flex;
+				justify-content: center;
+				margin: 2em 0 .7em 0;
+
+				.all-entries-btn {
+					padding: 0.5em 1em;
+					font-size: $fontsize-xs;
+					font-weight: bold;
+					text-transform: uppercase;
+					color: $color-content-text;
+					border: 2px solid $color-content-text;
+					border-radius: 10px;
+					transition: 0.5s;
+				}
+
+				.all-entries-btn:hover {
+					color: $color-detail;
+					border: 2px solid $color-detail;
+				}
+			}
+		}
+	}
+
+	.projects {
+		&__container {
+			display: flex;
+			justify-content: space-around;
+		}
+
+		&__title {
+			padding: 0 0 0.3em 0;
+			text-align: center;
+			transition: 0.5s;
+		}
+
+		&__title:hover {
+			color: $color-detail;
+		}
+
+		&__picture {
+			width: 7em;
+		}
+	}
+
+	.contact {
+		display: flex;
+		align-items: space-around;
+		flex-direction: column;
+		margin-bottom: 0.7em;
+
+		&__container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		&__social {
+			display: flex;
+			justify-content: space-evenly;
+			width: 80%;
+			padding-bottom: 0.5em;
+		}
+
+		&__link {
+			padding: 0.5em;
+			color: $color-content-text;
+			transition: 0.5s;
+		}
+
+		&__mail-link {
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			padding-bottom: 0.5em;
+			color: $color-content-text;
+			transition: 0.5s;
+
+			.mail {
+				padding-left: 0.4em;
+				font-size: $fontsize-xs;
+			}
+		}
+
+		&__link:hover,
+		&__mail-link:hover {
+			color: $color-detail;
+		}
+	}
+}

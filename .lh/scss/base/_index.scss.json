@@ -1,0 +1,38 @@
+{
+    "sourceFile": "scss/base/_index.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1656167576292,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1656167582462,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-@\n\\ No newline at end of file\n+@forward '';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1656167592528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,1 @@\n-@forward '';\n\\ No newline at end of file\n+@forward 'global';\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1656167602861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,1 +1,3 @@\n-@forward 'global';\n\\ No newline at end of file\n+@forward 'global';\n+@forward '';\n+@forward 'global';\n"
+                },
+                {
+                    "date": 1656167609792,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n @forward 'global';\n+@forward 'reset';\n @forward '';\n-@forward 'global';\n"
+                },
+                {
+                    "date": 1656167616539,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n @forward 'global';\n @forward 'reset';\n-@forward 'typograp';\n+@forward 'typograph';\n"
+                }
+            ],
+            "date": 1656167576292,
+            "name": "Commit-0",
+            "content": "@"
+        }
+    ]
+}

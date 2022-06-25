@@ -1,0 +1,24 @@
+.nav {
+	position: sticky;
+	top: 1.9em;
+	width: 100%;
+	max-width: 1200px;
+	padding: .2em 0;
+	font-size: $fontsize-ms;
+	background-color: $color-bgc;
+	z-index: 10;
+
+	&__menu {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	&__link {
+		color: $color-header-text;
+		transition: .5s;
+	}
+
+	&__link:hover {
+		color: $color-detail;
+	}
+}

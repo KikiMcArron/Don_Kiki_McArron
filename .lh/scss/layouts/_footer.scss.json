@@ -1,0 +1,18 @@
+{
+    "sourceFile": "scss/layouts/_footer.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1656167934061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1656167934061,
+            "name": "Commit-0",
+            "content": ".footer {\n\t.foot {\n\t\tpadding: 0.5em;\n\t\tcolor: $color-header-text;\n\t\tfont-size: $fontsize-xs;\n\t\tfont-weight: bold;\n\t}\n}"
+        }
+    ]
+}
