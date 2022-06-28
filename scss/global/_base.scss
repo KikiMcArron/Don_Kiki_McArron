@@ -1,3 +1,5 @@
+@use '../abstracts/' as *;
+
 .body-container {
 	display: flex;
 	flex-direction: column;
