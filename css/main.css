@@ -53,7 +53,7 @@ table {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: inherit;
 }
 
 @media (min-width: 36em) {
@@ -104,10 +104,12 @@ a {
 }
 
 .header {
-  display: flex;
-  justify-content: center;
   width: 100%;
   max-width: 1200px;
+  height: 60vmin;
+  background-image: url("../img/setup_1280_400.jpg");
+  background-size: cover;
+  background-position: 50%;
 }
 .header__bar {
   position: fixed;
@@ -127,19 +129,7 @@ a {
 .header__title {
   font-family: "Unkempt", cursive;
   font-size: 1em;
-  text-align: center;
-}
-.header__link {
   color: rgb(198, 215, 218);
-}
-
-.header::after {
-  content: "";
-  height: 60vmin;
-  width: 100%;
-  background-image: url("../img/setup_1280_400.jpg");
-  background-size: cover;
-  background-position: 50%;
 }
 
 .nav {

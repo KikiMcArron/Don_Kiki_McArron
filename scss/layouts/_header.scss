@@ -1,44 +1,33 @@
 @use '../abstracts/' as *;
 
 .header {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	max-width: 1200px;
+    width: 100%;
+    max-width: 1200px;
+    height: 60vmin;
+    background-image: url('../img/setup_1280_400.jpg');
+    background-size: cover;
+    background-position: 50%;
 
-	&__bar {
-		position: fixed;
-		display: flex;
-		justify-content: center;
-		width: 100%;
-		top: 0;
-		font-size: $fontsize-xl;
-		background-color: $color-bgc;
-		z-index: 10;
-	}
+    &__bar {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        top: 0;
+        font-size: $fontsize-xl;
+        background-color: $color-bgc;
+        z-index: 10;
+    }
 
-	&__logo {
-		display: block;
-		height: 1em;
-		padding: 0.2em 0.5em 0 0;
-	}
+    &__logo {
+        display: block;
+        height: 1em;
+        padding: 0.2em 0.5em 0 0;
+    }
 
-	&__title {
-		font-family: 'Unkempt', cursive;
-		font-size: 1em;
-		text-align: center;
-	}
-	
-	&__link {
+    &__title {
+        font-family: 'Unkempt', cursive;
+        font-size: 1em;
 		color: $color-header-text;
-	}
-}
-
-.header::after {
-	content: '';
-	height: 60vmin;
-	width: 100%;
-	background-image: url('../img/setup_1280_400.jpg');
-	background-size: cover;
-	background-position: 50%;
+    }
 }
