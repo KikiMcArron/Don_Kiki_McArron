@@ -1,10 +1,11 @@
 @use '../abstracts/' as *;
 
 .footer {
-	.foot {
-		padding: 0.5em;
-		color: $color-header-text;
-		font-size: $fontsize-xs;
-		font-weight: bold;
-	}
+	padding: 0.5em;
+	background-color: $color-bgc;
+	color: $color-header-text;
+	font-size: $fontsize-xs;
+	font-weight: bold;
+	text-align: center;
+	
 }

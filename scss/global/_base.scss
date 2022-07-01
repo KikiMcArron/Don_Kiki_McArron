@@ -1,11 +1,12 @@
 @use '../abstracts/' as *;
 
-.body-container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100%;
+body {
 	background-color: $color-bgc;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .detail-color {
@@ -13,5 +14,5 @@
 }
 
 .scroll {
-	scroll-margin-top: 3.7rem;
+	scroll-margin-top: 4rem;
 }
