@@ -1,0 +1,19 @@
+@use '../abstracts/' as *;
+
+// BUTTONS
+
+.default-btn {
+    padding: 0.5em 1em;
+    font-size: $fontsize-xs;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color-content-text;
+    border: 2px solid $color-content-text;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.default-btn:hover {
+    color: $color-detail;
+    border: 2px solid $color-detail;
+}

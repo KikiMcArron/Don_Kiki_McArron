@@ -80,6 +80,22 @@ body {
   scroll-margin-top: 4rem;
 }
 
+.default-btn {
+  padding: 0.5em 1em;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.default-btn:hover {
+  color: rgb(163, 10, 10);
+  border: 2px solid rgb(163, 10, 10);
+}
+
 @media (min-width: 36em) {
   html {
     font-size: 24px;
@@ -216,7 +232,11 @@ body {
   text-align: justify;
 }
 .content .about__text--highlight {
+  margin: 1em 0.5em;
   padding: 1.5em 1em;
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 10px;
 }
 .content .about__link {
   font-weight: bold;
@@ -232,9 +252,9 @@ body {
   justify-content: center;
 }
 .content .blog .last-entry__info {
-  padding: 0 0.3em;
   display: flex;
   justify-content: space-between;
+  padding: 0 0.3em;
 }
 .content .blog .last-entry__hash {
   font-size: 1.5rem;
@@ -259,7 +279,6 @@ body {
   color: rgb(163, 10, 10);
 }
 .content .blog .last-entry__picture {
-  display: block;
   height: 11em;
   padding-bottom: 0.5em;
   margin: 0 auto;
@@ -270,8 +289,13 @@ body {
   text-align: justify;
   color: rgb(0, 0, 0);
 }
+.content .blog .last-entry__btn {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.7em 0.5em;
+}
 .content .blog .prev-entries {
-  margin-top: 0.7em;
+  margin-top: 1.5em;
 }
 .content .blog .prev-entries__entry {
   padding: 0 0.3em;
@@ -323,7 +347,7 @@ body {
   color: rgb(163, 10, 10);
 }
 .content .blog .old-entries {
-  margin-top: 0.7em;
+  margin-top: 1.5em;
 }
 .content .blog .old-entries__title {
   position: relative;
@@ -367,24 +391,10 @@ body {
 .content .blog .old-entries__date:hover, .content .blog .old-entries__entry-title:hover {
   color: rgb(163, 10, 10);
 }
-.content .blog .old-entries__all-entries {
+.content .blog .old-entries__btn {
   display: flex;
   justify-content: center;
   margin: 2em 0 0.7em 0;
-}
-.content .blog .old-entries__all-entries .all-entries-btn {
-  padding: 0.5em 1em;
-  font-size: 0.75rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: rgb(0, 0, 0);
-  border: 2px solid rgb(0, 0, 0);
-  border-radius: 10px;
-  transition: 0.5s;
-}
-.content .blog .old-entries__all-entries .all-entries-btn:hover {
-  color: rgb(163, 10, 10);
-  border: 2px solid rgb(163, 10, 10);
 }
 .content .projects__container {
   display: flex;
