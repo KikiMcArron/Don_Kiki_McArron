@@ -6,7 +6,7 @@
 	background-image: url('../img/pattern_grey.jpg');
 
 	&__title {
-		margin-top: .6em;
+		margin-top: 0.6em;
 		text-align: center;
 		font-size: $fontsize-l;
 		text-transform: uppercase;
@@ -14,47 +14,46 @@
 	}
 
 	&__container {
-		margin: .2em 1em 0 1em;
-		padding: .5em;
+		margin: 0.2em 1em 0 1em;
+		padding: 0.5em;
 		background-color: $color-content-bgc;
 		border-radius: 1em;
 	}
 
-// ABOUT SECTION
+	// ABOUT SECTION
 
 	.about {
 		&__picture {
 			float: left;
 			height: 10.5em;
-			padding: .3em .5em 0 .5em;
+			padding: 0.3em 0.5em 0 0.5em;
 		}
 
 		&__hello {
-			margin: 0 .5em;
-			padding: .3em 0;
+			margin: 0 0.5em;
+			padding: 0.3em 0;
 			font-weight: bold;
 			text-align: center;
 		}
 
 		&__text {
-			margin: 0 .5em;
-			padding-bottom: .5em;
+			margin: 0 0.5em;
+			padding-bottom: 0.5em;
 			text-align: justify;
 
 			&--highlight {
-				margin: 1em .5em;
+				margin: 1em 0.5em;
 				padding: 1.5em 1em;
 				text-align: center;
-				border: 2px solid $color-content-text ;
+				border: 2px solid $color-content-text;
 				border-radius: 10px;
 			}
 		}
 
-
 		&__link {
 			font-weight: bold;
 			color: $color-content-text;
-			transition: .5s;
+			transition: 0.5s;
 		}
 
 		&__link:hover {
@@ -62,7 +61,7 @@
 		}
 	}
 
-// BLOG SECTION
+	// BLOG SECTION
 
 	.blog {
 		display: flex;
@@ -73,7 +72,7 @@
 			&__info {
 				display: flex;
 				justify-content: space-between;
-				padding: 0 .3em;
+				padding: 0 0.3em;
 			}
 
 			&__hash {
@@ -97,7 +96,7 @@
 
 			&__date,
 			&__title {
-				transition: .5s;
+				transition: 0.5s;
 			}
 
 			&__date:hover,
@@ -107,12 +106,12 @@
 
 			&__picture {
 				height: 11em;
-				padding-bottom: .5em;
+				padding-bottom: 0.5em;
 				margin: 0 auto;
 			}
 
 			&__text {
-				margin: .5em .7em;
+				margin: 0.5em 0.7em;
 				font-size: $fontsize-s;
 				text-align: justify;
 				color: $color-content-text;
@@ -121,75 +120,75 @@
 			&__btn {
 				display: flex;
 				justify-content: flex-end;
-				margin: .7em .5em;
+				margin: 0.7em 0.5em;
 			}
 		}
 
 		.prev-entries {
 			margin-top: 1.5em;
 
-			&__entry {
+			.prev-entry {
 				padding: 0 0.3em;
 				font-size: $fontsize-s;
-			}
 
-			&__info {
-				display: flex;
-				justify-content: space-between;
-				margin: 0 auto;
-			}
+				&__info {
+					display: flex;
+					justify-content: space-between;
+					margin: 0 auto;
+				}
 
-			&__hash {
-				font-size: $fontsize-s;
-				color: $color-detail;
-			}
+				&__hash {
+					font-size: $fontsize-s;
+					color: $color-detail;
+				}
 
-			&__date {
-				padding-top: 1.3em;
-				font-size: $fontsize-xxs;
-				color: $color-content-text;
-			}
+				&__date {
+					padding-top: 1.3em;
+					font-size: $fontsize-xxs;
+					color: $color-content-text;
+				}
 
-			&__hero-1,
-			&__hero-2,
-			&__hero-3 {
-				height: 40vmin;
-				margin: 0 auto 1em auto;
-				background-size: cover;
-				background-position: center;
-			}
+				&__hero-1,
+				&__hero-2,
+				&__hero-3 {
+					height: 40vmin;
+					margin: 0 auto 1em auto;
+					background-size: cover;
+					background-position: center;
+				}
 
-			&__hero-1 {
-				background-image: url('../img/Blog/blog-38.jpg');
-			}
+				&__hero-1 {
+					background-image: url('../img/Blog/blog-38.jpg');
+				}
 
-			&__hero-2 {
-				background-image: url('../img/Blog/blog-37.jpg');
-			}
+				&__hero-2 {
+					background-image: url('../img/Blog/blog-37.jpg');
+				}
 
-			&__hero-3 {
-				background-image: url('../img/Blog/blog-36.jpg');
-			}
+				&__hero-3 {
+					background-image: url('../img/Blog/blog-36.jpg');
+				}
 
-			&__title {
-				position: relative;
-				top: 50%;
-				padding: .5em;
-				transform: translate(0, -50%);
-				font-size: $fontsize-ms;
-				text-align: center;
-				color: $color-header-text;
-				background-color: $color-bgc-transparent;
-			}
+				&__title {
+					position: relative;
+					top: 50%;
+					padding: 0.5em;
+					transform: translate(0, -50%);
+					font-size: $fontsize-ms;
+					text-align: center;
+					color: $color-header-text;
+					background-color: $color-bgc-transparent;
+				}
 
-			&__date,
-			&__title {
-				transition: 0.5s;
-			}
+				&__date,
+				&__title {
+					transition: 0.5s;
+				}
 
-			&__date:hover,
-			&__title:hover {
-				color: $color-detail;
+				&__date:hover,
+				&__title:hover {
+					color: $color-detail;
+				}
 			}
 		}
 
@@ -203,61 +202,62 @@
 				text-align: center;
 			}
 
-			&__entry {
+			.old-entry {
 				margin-bottom: 1em;
 				font-size: $fontsize-s;
-			}
 
-			&__info {
-				display: flex;
-				justify-content: flex-end;
-				align-items: center;
-			}
+				&__info {
+					display: flex;
+					justify-content: flex-end;
+					align-items: center;
+				}
 
-			&__hash {
-				margin-left: 0.3em;
-				font-size: $fontsize-s;
-				color: $color-detail;
-			}
+				&__hash {
+					margin-left: 0.3em;
+					font-size: $fontsize-s;
+					color: $color-detail;
+				}
 
-			&__date {
-				padding: 0.5em;
-				font-size: $fontsize-xxs;
-				color: $color-content-text;
-			}
+				&__date {
+					padding: 0.5em;
+					font-size: $fontsize-xxs;
+					color: $color-content-text;
+				}
 
-			&__container {
-				display: flex;
-				align-items: center;
-			}
-			&__miniature {
-				padding: 0 1em;
-				height: 2em;
-			}
+				&__container {
+					display: flex;
+					align-items: center;
+				}
 
-			&__entry-title {
-				color: $color-content-text;
-			}
+				&__miniature {
+					padding: 0 1em;
+					height: 2em;
+				}
 
-			&__date,
-			&__entry-title {
-				transition: 0.5s;
-			}
+				&__title {
+					color: $color-content-text;
+				}
 
-			&__date:hover,
-			&__entry-title:hover {
-				color: $color-detail;
+				&__date,
+				&__title {
+					transition: 0.5s;
+				}
+
+				&__date:hover,
+				&__title:hover {
+					color: $color-detail;
+				}
 			}
 
 			&__btn {
 				display: flex;
 				justify-content: center;
-				margin: 2em 0 .7em 0;
+				margin: 2em 0 0.7em 0;
 			}
 		}
 	}
 
-// PROJECTS SECTION
+	// PROJECTS SECTION
 
 	.projects {
 		&__container {
@@ -280,7 +280,7 @@
 		}
 	}
 
-//CONTACT SECTION
+	//CONTACT SECTION
 
 	.contact {
 		display: flex;
