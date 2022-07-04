@@ -3,19 +3,10 @@
 .content {
 	display: flex;
 	flex-direction: column;
-	background-image: url('../img/pattern_grey.jpg');
-
-	&__title {
-		margin-top: 0.6em;
-		text-align: center;
-		font-size: $fontsize-l;
-		text-transform: uppercase;
-		color: $color-content-text;
-	}
+	// background-image: url('../img/pattern_grey.jpg');
 
 	&__container {
-		margin: 0.2em 1em 0 1em;
-		padding: 0.5em;
+		margin: 1.5em .5em 0 .5em;
 		background-color: $color-content-bgc;
 		border-radius: 1em;
 	}
@@ -23,15 +14,19 @@
 	// ABOUT SECTION
 
 	.about {
+		color: $color-header-text;
+
 		&__picture {
 			float: left;
 			height: 10.5em;
-			padding: 0.3em 0.5em 0 0.5em;
+			margin: 0.5em 1em 0 1em;
+			border-radius: 1em;
 		}
 
 		&__hello {
 			margin: 0 0.5em;
-			padding: 0.3em 0;
+			padding: 0.8em 0;
+			font-size: $fontsize-m;
 			font-weight: bold;
 			text-align: center;
 		}
@@ -45,8 +40,8 @@
 				margin: 1em 0.5em;
 				padding: 1.5em 1em;
 				text-align: center;
-				border: 2px solid $color-content-text;
-				border-radius: 10px;
+				border: 2px solid $color-detail;
+				border-radius: 1em;
 			}
 		}
 
@@ -193,7 +188,7 @@
 		}
 
 		.old-entries {
-			margin-top: 1.5em;
+			// margin-top: 1.5em;
 
 			&__title {
 				position: relative;
@@ -251,7 +246,7 @@
 
 			&__btn {
 				display: flex;
-				justify-content: center;
+				justify-content: end;
 				margin: 2em 0 0.7em 0;
 			}
 		}
@@ -260,23 +255,37 @@
 	// PROJECTS SECTION
 
 	.projects {
+		&__title {
+			margin-top: 2em;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: $fontsize-m;
+			color: $color-content-text;
+		}
+		
 		&__container {
 			display: flex;
 			justify-content: space-around;
+			padding: 1em 0 1.5em;
+			background-color: $color-bgc-second;
+			border-radius: 1em;
 		}
 
-		&__title {
-			padding: 0 0 0.3em 0;
-			text-align: center;
-			transition: 0.5s;
-		}
+		.project {
+			&__title {
+				padding: 0 0 0.3em;
+				text-align: center;
+				color: $color-content-text;
+				transition: 0.5s;
+			}
 
-		&__title:hover {
-			color: $color-detail;
-		}
+			&__title:hover {
+				color: $color-detail;
+			}
 
-		&__picture {
-			width: 7em;
+			&__picture {
+				width: 7em;
+			}
 		}
 	}
 
@@ -284,19 +293,21 @@
 
 	.contact {
 		display: flex;
-		align-items: space-around;
+		align-items: center;
 		flex-direction: column;
-		margin-bottom: 0.7em;
 
 		&__container {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
+			margin-top: 3em;
+			border: 2px solid $color-detail;
+			width: 70%;
 		}
 		&__social {
 			display: flex;
 			justify-content: space-evenly;
-			width: 80%;
+			width: 100%;
 			padding-bottom: 0.5em;
 		}
 

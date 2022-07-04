@@ -1,56 +1,67 @@
 @use '../abstracts/' as *;
 
-@media (min-width: 36em) {
+@media (min-width: 576px) {
 	html {
 		font-size: 24px;
 	}
 }
 
-@media (min-width: 48em) {
+@media (min-width: 768px) {
 	html {
 		font-size: 28px;
 	}
 
-	.content {
-		.blog {
-			.last-entry {
-				.last-entry__picture {
-					float: left;
-					margin: 0.5em 0.5em 0 0.5em;
+	.wrapper {
+		.content {
+			.blog {
+				.last-entry {
+					.last-entry__picture {
+						float: left;
+						margin: 0.5em 0.5em 0 0.5em;
+					}
 				}
-			}
-			.prev-entries {
-				display: flex;
-				justify-content: space-around;
-				&__info {
-					width: 100%;
-				}
-				&__hero-1,
-				&__hero-2,
-				&__hero-3 {
-					margin: 0;
-					height: 30vmin;
-					width: 28vw;
-					max-width: 350px;
-				}
-				&__title {
-					font-size: $fontsize-xs;
+				.prev-entries {
+					display: flex;
+					justify-content: space-around;
+	
+					.prev-entry {
+						&__info {
+							width: 100%;
+						}
+	
+						&__hero-1,
+						&__hero-2,
+						&__hero-3 {
+							margin: 0;
+							height: 30vmin;
+							width: 28vw;
+							max-width: 350px;
+						}
+	
+						&__title {
+							font-size: $fontsize-xs;
+						}
+					}
 				}
 			}
 		}
 	}
 }
 
-@media (min-width: 62em) {
+@media (min-width: 992px) {
 	html {
-		font-size: 34px;
+		font-size: 30px;
 	}
 
-	.content {
-		.blog {
-			.prev-entries {
-				&__title {
-					font-size: $fontsize-xs;
+	.wrapper {
+		.content {
+			.blog {
+				.prev-entries {
+					.prev-entry {
+						&__title {
+							font-size: $fontsize-xs;
+						}
+					}
 				}
 			}
 		}

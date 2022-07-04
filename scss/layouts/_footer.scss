@@ -1,6 +1,7 @@
 @use '../abstracts/' as *;
 
 .footer {
+	margin-top: 1em;
 	padding: 0.5em;
 	background-color: $color-bgc;
 	color: $color-header-text;
